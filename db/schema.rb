@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_12_083814) do
+ActiveRecord::Schema.define(version: 2022_04_12_091350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,17 +26,6 @@ ActiveRecord::Schema.define(version: 2022_04_12_083814) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "devis", force: :cascade do |t|
-    t.string "society"
-    t.string "email"
-    t.string "name"
-    t.string "phone_number"
-    t.string "prestation_type"
-    t.string "work_description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "prestations", force: :cascade do |t|
     t.string "title"
     t.text "string_text"
@@ -44,6 +33,17 @@ ActiveRecord::Schema.define(version: 2022_04_12_083814) do
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "quotes", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "society_name"
+    t.string "email"
+    t.string "name"
+    t.string "phone_number"
+    t.string "prestation_type"
+    t.text "work_description"
   end
 
 end
