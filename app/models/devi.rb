@@ -1,0 +1,2 @@
+class Devi < ApplicationRecord
+end
