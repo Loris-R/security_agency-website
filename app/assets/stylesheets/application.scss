@@ -10,3 +10,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+li {
+  list-style-type: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
