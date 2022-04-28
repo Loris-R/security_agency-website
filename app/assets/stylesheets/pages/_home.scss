@@ -1,1 +1,63 @@
-// Specific CSS for your home-page
+.home-contain {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#frame-one {
+  margin: 3rem;
+}
+
+#frame-two {
+  // max-width: 1140px;
+  width: 100%;
+  height: 600px;
+  background-color: #771708;
+  margin: 3rem;
+  h2 {
+    padding: 3rem 6rem 0 6rem;
+    color: white;
+  }
+}
+
+.cards {
+  margin: 0 auto;
+  display: flex;
+}
+
+.savoir-faire-card {
+  width: 325px;
+  margin: 0 10px;
+}
+
+.savoir-faire-card-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: 'adobe-caslon-pro';
+  color: #974a37;
+  margin: 1rem 0;
+  height: 120px;
+}
+
+.savoir-faire-card-description {
+  font-size: 0.9rem;
+}
+
+.strategie {
+  display: flex;
+  justify-content: space-around;
+}
+
+.strategie-card {
+  color: white;
+  display: flex;
+  width: 325px;
+  height: 325px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+}
