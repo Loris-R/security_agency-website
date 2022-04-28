@@ -7,9 +7,13 @@ h2 {
   margin: 0 3rem;
 }
 
+.cards {
+  display: flex;
+}
+
 .savoir-faire-card {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 .savoir-faire-card-title {
@@ -17,4 +21,10 @@ h2 {
   font-size: 1.2rem;
   font-family: 'adobe-caslon-pro';
   color: #974a37;
+  margin: 1rem 0;
+  height: 120px;
+}
+
+.savoir-faire-card-description {
+  font-size: 0.9rem;
 }
