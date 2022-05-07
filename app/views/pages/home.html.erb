@@ -52,7 +52,13 @@
     <h2>Nos secteurs d'activités</h2>
 
     <div class="secteurs">
-      
+      <% @prestations.each do |prestation| %>
+        <div class="activity">
+          <h3><%= prestation. %></h3>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+
+<% console %>
