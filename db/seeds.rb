@@ -12,13 +12,13 @@ activity = Activity.new(title: "Bâtiment",
 activity.save!
 
 puts "Batiment's images..."
-img = Image.new(file_name: "batiment1",
+img = Image.new(file_name: "bâtiment1.jpg",
                 page: "home",
                 activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "batiment2",
+img = Image.new(file_name: "batiment2.jpg",
   page: "expertise",
   activity_id: activity.id
 )
@@ -69,7 +69,7 @@ activity = Activity.new(title: "Hôtel",
 activity.save!
 
 puts "hotel's images..."
-img = Image.new(file_name: "hotel1",
+img = Image.new(file_name: "hotel1.jpg",
   page: "home",
   activity_id: activity.id
 )
@@ -102,7 +102,7 @@ puts "evenement's images..."
 # )
 # img.save!
 
-img = Image.new(file_name: "evenement2",
+img = Image.new(file_name: "evenement2.jpg",
   page: "expertise",
   activity_id: activity.id
 )
@@ -125,7 +125,7 @@ activity = Activity.new(title: "BTP",
 activity.save!
 
 puts "BTP's images..."
-img = Image.new(file_name: "btp1",
+img = Image.new(file_name: "btp1.jpg",
   page: "home",
   activity_id: activity.id
 )
@@ -151,7 +151,7 @@ activity = Activity.new(title: "Zone de stockage",
 activity.save!
 
 puts "stockage's images..."
-img = Image.new(file_name: "stockage1",
+img = Image.new(file_name: "stockage1.jpg",
   page: "home",
   activity_id: activity.id
 )

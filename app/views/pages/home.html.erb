@@ -52,12 +52,21 @@
     <h2>Nos secteurs d'activités</h2>
 
     <div class="secteurs">
-      <% @prestations.each do |prestation| %>
+      <% @activities.each do |activity| %>
         <div class="activity">
-          <h3><%= prestation. %></h3>
+          <h3><%= activity.title %></h3>
+          <% if !activity.images.find_by(page: "home").nil? %>
+            <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
+          <% else %>
+            <%= image_tag('https://via.placeholder.com/325x688') %>
+          <% end %>
         </div>
       <% end %>
     </div>
+  </div>
+
+  <div id="frame-four">
+    <h2>Nos partenaires</h2>
   </div>
 </div>
 

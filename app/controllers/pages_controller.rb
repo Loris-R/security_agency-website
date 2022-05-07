@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @prestations = Prestation.all
+    @activities = Activity.all
   end
 
   def about
