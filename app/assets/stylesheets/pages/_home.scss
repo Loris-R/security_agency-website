@@ -25,6 +25,12 @@
   margin: 3rem;
 }
 
+#frame-four {
+  width: 100%;
+  background-color: #C6C6C6;
+  margin: 0 0 3rem 0;
+}
+
 .cards {
   margin: 0 auto;
   display: flex;
@@ -67,4 +73,13 @@
   font-size: 1.2rem;
   flex-direction: column;
   justify-content: center;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: space-evenly;
+
+  li img {
+    height: 3.5rem;
+  }
 }
