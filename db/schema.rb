@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_30_155147) do
+ActiveRecord::Schema.define(version: 2022_05_07_144621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "activities", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "first_name"
@@ -29,10 +37,10 @@ ActiveRecord::Schema.define(version: 2022_04_30_155147) do
   create_table "images", force: :cascade do |t|
     t.string "file_name"
     t.string "page"
-    t.bigint "prestation_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["prestation_id"], name: "index_images_on_prestation_id"
+    t.bigint "activity_id"
+    t.index ["activity_id"], name: "index_images_on_activity_id"
   end
 
   create_table "prestations", force: :cascade do |t|
@@ -54,5 +62,4 @@ ActiveRecord::Schema.define(version: 2022_04_30_155147) do
     t.text "work_description"
   end
 
-  add_foreign_key "images", "prestations"
 end
