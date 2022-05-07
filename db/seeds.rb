@@ -30,6 +30,7 @@ img.save!
 # )
 # img.save!
 
+puts "creating parking activity..."
 activity = Activity.new(title: "Parking",
             subtitle: "Parking et zone de stockage",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
@@ -38,6 +39,7 @@ activity = Activity.new(title: "Parking",
 )
 activity.save!
 
+puts "parking's images..."
 # img = Image.new(file_name: ,
 #   page: ,
 #   activity_id: 
@@ -56,6 +58,7 @@ activity.save!
 # )
 # img.save!
 
+puts "creating hotel activity..."
 activity = Activity.new(title: "Hôtel",
             subtitle: "Hôtellerie, ERP",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
@@ -65,6 +68,7 @@ activity = Activity.new(title: "Hôtel",
 )
 activity.save!
 
+puts "hotel's images..."
 img = Image.new(file_name: "hotel1",
   page: "home",
   activity_id: activity.id
@@ -83,6 +87,7 @@ img.save!
 # )
 # img.save!
 
+puts "creating evenement activity..."
 activity = Activity.new(title: "Evènement",
             subtitle: "Evènnementiel",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
@@ -90,6 +95,7 @@ activity = Activity.new(title: "Evènement",
 )
 activity.save!
 
+puts "evenement's images..."
 # img = Image.new(file_name: ,
 #   page: ,
 #   activity_id: 
@@ -108,6 +114,7 @@ img.save!
 # )
 # img.save!
 
+puts "creating BTP activity..."
 activity = Activity.new(title: "BTP",
             subtitle: "Surveillance des chantiers",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
@@ -117,6 +124,7 @@ activity = Activity.new(title: "BTP",
 )
 activity.save!
 
+puts "BTP's images..."
 img = Image.new(file_name: "btp1",
   page: "home",
   activity_id: activity.id
@@ -135,18 +143,18 @@ img.save!
 # )
 # img.save!
 
+puts "creating zone de stockage activity..."
 activity = Activity.new(title: "Zone de stockage",
             subtitle: "",
             description: ""
 )
 activity.save!
 
+puts "stockage's images..."
 img = Image.new(file_name: "stockage1",
   page: "home",
   activity_id: activity.id
 )
 img.save!
-
-
 
 puts "Seeds terminated !"

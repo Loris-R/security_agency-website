@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  belongs_to :prestation, dependent: :destroy
+  belongs_to :activity, dependent: :destroy
 end
