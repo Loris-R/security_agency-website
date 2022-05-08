@@ -1,6 +1,15 @@
 .banner {
   background-size: cover;
   background-position: center;
+  height: 792px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-header-height {
+  background-size: cover;
+  background-position: center;
   height: 712px;
   display: flex;
   flex-direction: column;
