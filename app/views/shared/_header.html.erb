@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path('header-home.jpg') %>);">
+<div class="<%= @header == "header-home.jpg" ? 'home-header-height' : 'banner' %>" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path(@header) %>);">
   <div class="contain">
     <p>L'AZUREENNE DE PROTECTION</p>
     <h1>Mieux vaut prévenir<br>
@@ -6,3 +6,4 @@
     </h1>
   </div>
 </div>
+<% console %>
