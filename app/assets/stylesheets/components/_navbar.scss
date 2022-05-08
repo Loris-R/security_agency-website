@@ -1,10 +1,13 @@
 .menus {
   display: flex;
-  margin-right: 3rem;
-  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0.4em;
+  padding-left: 0;
+  font-size: 13px;
 
   li {
-    margin: 0 20px;
+    margin: 3px 38px
   }
 }
 
@@ -12,8 +15,4 @@
   margin-bottom: 0.8rem;
   height: 39.74px;
   width: 50.12px;
-}
-
-.navbar {
-  flex-direction: column;
 }

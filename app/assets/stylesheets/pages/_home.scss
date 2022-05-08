@@ -6,7 +6,9 @@
 }
 
 #frame-one {
-  margin: 3rem;
+  margin-top: 63px;
+  margin-bottom: 57px;
+  color: #595959;
 }
 
 #frame-two {
@@ -14,6 +16,7 @@
   width: 100%;
   height: 600px;
   background-color: #771708;
+  font-size: 20px;
   margin: 3rem;
   h2 {
     padding: 3rem 6rem 0 6rem;
@@ -38,7 +41,7 @@
 
 .savoir-faire-card {
   width: 325px;
-  margin: 0 10px;
+  margin: 0 1.219rem;
   img {
     width: 100%;
   }
@@ -49,12 +52,12 @@
   font-size: 1.2rem;
   font-family: 'adobe-caslon-pro';
   color: #974a37;
-  margin: 1rem 0;
+  margin: 2.438rem 0 1.563px 0;
   height: 120px;
 }
 
 .savoir-faire-card-description {
-  font-size: 0.9rem;
+  font-size: 0.938rem;
 }
 
 .strategie {
