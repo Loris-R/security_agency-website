@@ -24,7 +24,7 @@
 }
 
 #frame-three h2 {
-  padding: 1rem 6rem 0 6rem;
+  padding: 1rem 6rem 0 9rem;
   margin-bottom: 88px;
   color: #595959;
 }
@@ -32,7 +32,7 @@
 #frame-four {
   width: 100%;
   background-color: #C6C6C6;
-  padding: 0 0 3rem 0;
+  padding: 0 0 0 0;
 }
 
 .cards {
@@ -80,9 +80,13 @@
 .partners-logos {
   display: flex;
   justify-content: space-evenly;
+  filter: grayscale(100%);
+  padding-left: 0;
+  margin-bottom: 2em;
 
-  li img {
-    height: 3.5rem;
+  li {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -132,3 +136,10 @@
   display: flex;
   flex-direction: row;
 }
+
+.parts {
+  color: #FFFFFF;
+  padding: 3rem 6rem 0 6rem;
+  margin: 0;
+}
+
