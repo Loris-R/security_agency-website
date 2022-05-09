@@ -7,6 +7,15 @@
 $body-font: "Eina01-Regular", "sans-serif";
 $headers-font: "Eina01-Regular", "sans-serif";
 
+@supports (font-variation-settings: normal){
+  @font-face {
+   font-family: "acp";
+   src: font-url('acp.ttf') format('ttf');
+   font-style: italic;
+ }
+};
+
+$my-font: "acp";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
