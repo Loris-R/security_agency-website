@@ -50,15 +50,17 @@
     <h2>Nos secteurs d'activités</h2>
 
     <div class="secteurs">
-      <% @activities.each do |activity| %>
-        <div class="activity">
-          <h3><%= activity.title %></h3>
-          <% if !activity.images.find_by(page: "home").nil? %>
-            <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
-          <% else %>
-            <%= image_tag('https://via.placeholder.com/325x688') %>
-          <% end %>
-        </div>
+      <% @activities.each_slice(1) do |activity| %>
+        <% @activities.each_with_index do |activity, index| %>
+          <div class="grid-<%= index %>">
+            <h3><%= activity.title %></h3>
+            <% if !activity.images.find_by(page: "home").nil? %>
+              <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
+            <% else %>
+              <%= image_tag('https://via.placeholder.com/325x688') %>
+            <% end %> 
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>

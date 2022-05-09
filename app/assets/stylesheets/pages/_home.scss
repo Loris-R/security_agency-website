@@ -24,8 +24,9 @@
   }
 }
 
-#frame-three {
+#frame-three h2 {
   margin: 3rem;
+  color: #595959;
 }
 
 #frame-four {
@@ -85,4 +86,12 @@
   li img {
     height: 3.5rem;
   }
+}
+
+.secteurs {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(3, 325px);
+  justify-content: center;
+  gap: 73px; 
 }
