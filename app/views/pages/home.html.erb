@@ -59,7 +59,6 @@
     <h2>Nos secteurs d'activités</h2>
 
     <div class="secteurs">
-      <% @activities.each_slice(1) do |activity| %>
         <% @activities.each_with_index do |activity, index| %>
           <div class="grid-<%= index %>">
             <h3><%= activity.title %></h3>
@@ -70,7 +69,6 @@
             <% end %> 
           </div>
         <% end %>
-      <% end %>
     </div>
   </div>
 
