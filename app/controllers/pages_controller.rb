@@ -1,13 +1,11 @@
 class PagesController < ApplicationController
   def home
     @header = "header-home.jpg"
-    @h1 = "Mieux vaut prévenir<br>
-    que guérir..."
     @activities = Activity.all
   end
 
   def about
-    @header = "header-prestations.jpg"
+    @header = "header-about.jpg"
   end
 
   def expertise
