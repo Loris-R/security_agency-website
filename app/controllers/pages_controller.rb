@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def about
-    # @header =
+    @header = "header-about.jpg"
   end
 
   def expertise
@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   end
 
   def prestations
-    # @header =
+    @header = "header-prestations.jpg"
   end
 
   def contact
