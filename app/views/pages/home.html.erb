@@ -60,8 +60,8 @@
 
     <div class="secteurs">
         <% @activities.each_with_index do |activity, index| %>
-          <div class="grid-<%= index %>">
-            <h3><%= activity.title %></h3>
+          <div class="grid-<%= index %> grid">
+            <h3 class="vertical"><%= activity.title %></h3>
             <% if !activity.images.find_by(page: "home").nil? %>
               <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
             <% else %>

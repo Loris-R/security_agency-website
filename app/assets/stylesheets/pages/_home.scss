@@ -24,7 +24,8 @@
 }
 
 #frame-three h2 {
-  margin: 3rem;
+  padding: 1rem 6rem 0 6rem;
+  margin-bottom: 88px;
   color: #595959;
 }
 
@@ -90,7 +91,9 @@
   width: 100vw;
   grid-template-columns: repeat(3, 325px);
   justify-content: center;
-  gap: 73px; 
+  gap: 50px;
+  margin-right: 106.6px;
+  margin-bottom: 133px;
 }
 
 .number {
@@ -115,4 +118,17 @@
   font-style: italic;
   color: #FFFFFF;
   font-family: "acp";
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation:  sideways-left;
+  color: #721515;
+  transform: rotate(180deg);
+  margin-right: 2px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
 }
