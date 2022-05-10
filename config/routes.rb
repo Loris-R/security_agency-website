@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   get 'qui-sommes-nous', to: 'pages#about'
   get 'expertise', to: 'pages#expertise'
-  get 'secteurs-activites', to: 'pages#secteurs'
   get 'prestations', to: 'pages#prestations'
   get 'contact', to: 'pages#contact'
 end

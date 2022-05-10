@@ -3,13 +3,9 @@
     <%= link_to image_tag('logo.png', alt: "L'azuréenne protection", id: 'logo'), root_path %>
   </div>
   <ul class="menus">
-    <% if false %>
-      <li><a href="#">Accueil</a></li>
-      <li>|</li>
-    <% end %>
       <li><%= link_to 'QUI SOMMES-NOUS ?', qui_sommes_nous_path %></li>
       <li>|</li>
-      <li><a href="#">EXPERTISE</a></li>
+      <li><%= link_to 'EXPERTISE', expertise_path %></li>
       <li>|</li>
       <li><a href="#">SECTEURS D'ACTIVITÉ</a></li>
       <li>|</li>
