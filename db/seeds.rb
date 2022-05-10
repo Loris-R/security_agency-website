@@ -1,6 +1,7 @@
 # destroy all datas
 Activity.destroy_all
 
+# Create all activities with their images
 puts "creating Batiment activity..."
 activity = Activity.new(title: "Bâtiment",
             subtitle: "Bailleurs sociaux, syndics, villas...",
