@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
 
-  resources :prestations, only: :index
+  # resources :prestations, only: :index
   resources :quotes, only: %i(new create)
   resources :contact_forms, only: %i(new create)
 
