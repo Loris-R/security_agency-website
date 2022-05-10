@@ -8,12 +8,8 @@ class PagesController < ApplicationController
     @header = "header-about.jpg"
   end
 
-  def expertise
-    # @header =
-  end
-
   def secteurs
-    # @header =
+    @header = "header-activities.jpg"
   end
 
   def prestations

@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   resources :contact_forms, only: %i(new create)
 
   get 'qui-sommes-nous', to: 'pages#about'
-  get 'expertise', to: 'pages#expertise'
-  get 'secteurs-activites', to: 'pages#secteurs'
+  get 'secteurs-dactivites', to: 'pages#secteurs'
   get 'prestations', to: 'pages#prestations'
   get 'contact', to: 'pages#contact'
 end
