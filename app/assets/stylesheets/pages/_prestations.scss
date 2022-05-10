@@ -1,0 +1,38 @@
+.prestation {
+  max-width: 1270px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  img {
+    max-width: 635px
+  };
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.prestation-texts {
+  max-width: 635px;
+}
+
+.align-right {
+  flex-direction: row-reverse;
+}
+
+.text-align-right {
+  margin: 0 6rem 0 9rem;
+}
+
+.text-align-left {
+  margin: 0 9rem 0 6rem;
+}
