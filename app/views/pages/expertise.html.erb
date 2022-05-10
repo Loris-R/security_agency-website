@@ -1,0 +1,17 @@
+<% @activities.each do |activity| %>
+  <div class="activity">
+    <div class="activity-images">
+      <% if !activity.images.find_by(page: "expertise").nil? %>
+        <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "2.jpg") %>
+        <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "3.jpg") %>
+      <% else %>
+        <%= image_tag('https://via.placeholder.com/325x688') %>
+      <% end %> 
+    </div>
+    <div class="activities-texts">
+      <h2><%= activity.title %></h2>
+      <h3><%= activity.subtitle %></h3>
+      <p><%= activity.description %></p>
+    </div>
+  </div>
+<% end %>
