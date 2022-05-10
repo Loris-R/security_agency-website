@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 #frame-one {
   margin-top: 63px;
   margin-bottom: 23px;
@@ -142,4 +141,10 @@
   margin: 0;
 }
 
+#nav-tel {
+  display: none;
+}
+
  @media only screen and (min-width:767px) and (max-width: 1024px) {.menus li { margin: 3px 13px;} .savoir-faire-card { width: 201px;} .savoir-faire-card-description { margin-top: 6rem;} .opacity { font-size: 300px;} .strat { font-size: 13px;} .secteurs { grid-template-columns: repeat(2, 360px); gap: 30px; margin-right: 0; margin-bottom: 72px;} .vertical { margin: 1px;} .frame-three h2 { padding: 1rem 9rem 0 4rem;} .partners-logos { display: grid; justify-content: center; grid-template-columns: 185px 176px 235px 118px; margin-bottom: 0;} .parts { padding: 3rem 6rem 2rem 6rem;} #footer img { padding: 10px;} #footer-i { padding: 10px;} }
+
+ @media only screen and (min-width:279px) and (max-width:766px) { .navbar { flex-direction: row ; padding-bottom: 0;} #nav-tel { display: block;} #nav-computer { display: none;} .collapse:not(.show) { display: block;} .navbar-collapse { flex-basis: 0; flex-grow: 0;} .logo { padding: 10px;} .dropdown-toggle { height: 1.5em; width: 1.5em; margin-right: 10px;} .navbar-nav .dropdown-menu { position: absolute; right: 0;} .dropdown-item { font-size: smaller;} .home-header-height h1 { font-size: 40px;}.savoir-faire-card { width: 230px;} .cards { flex-direction: column;} .savoir-faire-card-description { margin-top: 4rem;} .tel { font-size: 2.4rem; margin-bottom: 2rem;} .frame-one { margin-top: 2rem;} .marg-tel { margin-top: 0;}.strategie { flex-direction: column; justify-content: center; align-items: center;} .opacity { font-size: 150px;} .strat { font-size: 10px;} #frame-two h2 { padding: 0; font-size: 2rem; margin-top: 1rem;} .strategie-card { height: 169px;} .secteurs { grid-template-columns: repeat(2, 360px); gap: 30px; margin-right: 0; margin-bottom: 72px;} .vertical { margin: 1px;} .frame-three h2 { padding: 1rem 9rem 0 4rem;} .partners-logos { display: grid; justify-content: center; grid-template-columns: 185px 176px 235px 118px; margin-bottom: 0;} .parts { padding: 3rem 6rem 2rem 6rem;} #footer img { padding: 10px;} #footer-i { padding: 10px;} }
