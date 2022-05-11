@@ -1,15 +1,46 @@
 #about {
   display: flex;
-  max-width: 900px;
+  justify-content: center;
   margin: 5rem auto;
 
   ul li {
     text-transform: uppercase;
     color: #721515;
     letter-spacing: -0.3px;
+    font-family: "acp";
   }
 
   img {
-    margin-left: 48.5px;
+    height: 662px;
+    width: 373px;
   }
+
+  h2 { 
+    color: #595959;
+    margin-bottom: 20px;
+  }
+
+  .dif {
+    color: #721515;
+    font-family: "acp";
+    font-style: italic;
+    letter-spacing: -0.3px;
+    font-size: 15px;
+  }
+}
+
+#about-text {
+  width: 348px;
+  margin-right: 64px;
+}
+
+.line { 
+  display: inline-block;
+  height: 2px;
+  width: 335px;
+  background:#721515;
+  position: absolute;
+  top: 1094px;
+  left: 676px;
+  transform: rotate(41deg);
 }
