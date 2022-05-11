@@ -1,6 +1,7 @@
 # destroy all datas
 Activity.destroy_all
 
+# Create all activities with their images
 puts "creating Batiment activity..."
 activity = Activity.new(title: "Bâtiment",
             subtitle: "Bailleurs sociaux, syndics, villas...",
@@ -24,11 +25,11 @@ img = Image.new(file_name: "batiment2.jpg",
 )
 img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "batiment3.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
 puts "creating parking activity..."
 activity = Activity.new(title: "Parking",
@@ -40,23 +41,23 @@ activity = Activity.new(title: "Parking",
 activity.save!
 
 puts "parking's images..."
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "parking1.jpg",
+  page: "home",
+  activity_id: activity.id
+)
+img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "parking2.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "parking3.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
 puts "creating hotel activity..."
 activity = Activity.new(title: "Hôtel",
@@ -75,17 +76,17 @@ img = Image.new(file_name: "hotel1.jpg",
 )
 img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "hotel2.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "hotel3.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
 puts "creating evenement activity..."
 activity = Activity.new(title: "Evènement",
@@ -96,11 +97,11 @@ activity = Activity.new(title: "Evènement",
 activity.save!
 
 puts "evenement's images..."
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "evenement1.jpg",
+  page: "home",
+  activity_id: activity.id
+)
+img.save!
 
 img = Image.new(file_name: "evenement2.jpg",
   page: "expertise",
@@ -108,11 +109,11 @@ img = Image.new(file_name: "evenement2.jpg",
 )
 img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "evenement3.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
 puts "creating BTP activity..."
 activity = Activity.new(title: "BTP",
@@ -131,17 +132,17 @@ img = Image.new(file_name: "btp1.jpg",
 )
 img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "btp2.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
-# img = Image.new(file_name: ,
-#   page: ,
-#   activity_id: 
-# )
-# img.save!
+img = Image.new(file_name: "btp3.jpg",
+  page: "expertise",
+  activity_id: activity.id
+)
+img.save!
 
 puts "creating zone de stockage activity..."
 activity = Activity.new(title: "Zone de stockage",
