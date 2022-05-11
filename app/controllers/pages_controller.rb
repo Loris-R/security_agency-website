@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    # @header =
+    @header = "header-contact.jpg"
 
     @quote = Quote.new
     @contact_form = ContactForm.new
