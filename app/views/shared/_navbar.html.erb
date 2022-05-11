@@ -2,7 +2,7 @@
   <div class="logo">
     <%= link_to image_tag('logo.png', alt: "L'azuréenne protection", id: 'logo'), root_path %>
   </div>
-  <ul class="menus">
+  <ul class="menus" id="nav-computer">
       <li><%= link_to 'QUI SOMMES-NOUS ?', qui_sommes_nous_path %></li>
       <li>|</li>
       <li><%= link_to 'EXPERTISE', expertise_path %></li>
@@ -13,4 +13,20 @@
       <li>|</li>
       <li><a href="#">CONTACT</a></li>
   </ul>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent nav-tel">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+            <%= image_tag "menu.png", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to 'QUI SOMMES-NOUS ?', qui_sommes_nous_path, class: "dropdown-item" %>
+              <a class="dropdown-item"> EXPERTISE </a>
+              <a class="dropdown-item"> SECTEURS D'ACTIVITÉ </a>
+              <a class="dropdown-item"> PRESTATIONS </a>
+              <a class="dropdown-item"> CONTACT </a>
+            </div>
+        </li>
+      </ul>
+  </div>
 </div>
+
