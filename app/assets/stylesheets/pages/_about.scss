@@ -32,6 +32,10 @@
 #about-text {
   width: 348px;
   margin-right: 64px;
+
+  ul {
+    padding-left: 0;
+  }
 }
 
 .line { 
@@ -40,7 +44,9 @@
   width: 335px;
   background:#721515;
   position: absolute;
-  top: 1094px;
+  top: 1091px;
   left: 676px;
   transform: rotate(41deg);
 }
+
+@media only screen and (min-width:767px) and (max-width: 1024px) { #about-text { width: 262px; margin-right: 25px;} #about h2 { font-size: 2.5rem; margin-bottom: 8px;} #about-text p { font-size: 15px;} #about-text ul { font-size: 15px;} #about img { width: 300px;} .line { top: 1107px; left: 241px; transform: rotate(48deg);} }
