@@ -9,7 +9,27 @@
 
 #contact-form {
   margin-right: 10rem;
+
+  form {
+    width: 350px;
+  }
 }
 #contact-text {
   max-width: 400px;
+}
+
+#quote-elements {
+  display: flex;
+}
+
+#quote-form {
+  margin-left: 10rem;
+
+  form {
+    width: 350px;
+  }
+}
+
+#quote-text {
+  
 }
