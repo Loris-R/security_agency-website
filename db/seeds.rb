@@ -19,13 +19,13 @@ img = Image.new(file_name: "bâtiment1.jpg",
 )
 img.save!
 
-img = Image.new(file_name: "batiment2.jpg",
+img = Image.new(file_name: "bâtiment2.jpg",
   page: "expertise",
   activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "batiment3.jpg",
+img = Image.new(file_name: "bâtiment3.jpg",
   page: "expertise",
   activity_id: activity.id
 )
