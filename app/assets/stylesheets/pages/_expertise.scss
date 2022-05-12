@@ -6,10 +6,33 @@
 .activity {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 3rem 0;
 }
 
 .activities-texts {
   max-width: 363px;
+  margin-left: 154px;
+
+  h2 {
+    color: #595959;
+    font-family: "acp";
+    font-style: normal;
+    font-size: 60px;  
+  }
+
+  h3 {
+    color: #771708;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+}
+
+.image-one {
+  position: absolute;
+  left: 141px;
 }

@@ -1,10 +1,9 @@
 <div id="expertise">
   <% @activities.each do |activity| %>
-      <% if !activity.images.find_by(page: "expertise").nil? %>
+    <% if !activity.images.find_by(page: "expertise").nil? %>
         <div class="activity">
           <div class="activity-images">
-              <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "2.jpg") %>
-              <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "3.jpg") %>        
+            <% image_tag(activity.images[1].file_name, class:"image-one")  %>     
           </div>
           <div class="activities-texts">
             <h2><%= activity.title %></h2>
