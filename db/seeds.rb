@@ -97,19 +97,19 @@ activity = Activity.new(title: "Evènement",
 activity.save!
 
 puts "evenement's images..."
-img = Image.new(file_name: "evenement1.jpg",
+img = Image.new(file_name: "evènement1.jpg",
   page: "home",
   activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "evenement2.jpg",
+img = Image.new(file_name: "evènement2.jpg",
   page: "expertise",
   activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "evenement3.jpg",
+img = Image.new(file_name: "evènement3.jpg",
   page: "expertise",
   activity_id: activity.id
 )
