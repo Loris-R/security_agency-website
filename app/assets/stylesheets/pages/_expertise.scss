@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
+  margin-left: 16rem;
 }
 
 .activities-texts {
@@ -32,7 +33,71 @@
   }
 }
 
-.image-one {
+.image-1 {
   position: absolute;
-  left: 141px;
+  left: 273px;
+  z-index: 2;
+  top: 965px
+}
+
+.image-2 {
+  position: absolute;
+  left: 273px;
+  z-index: 2;
+  top: 1703px;
+}
+
+.image-3 {
+  position: absolute;
+  left: 273px;
+  z-index: 2;
+  top: 2442px;
+}
+
+.image-4 {
+  position: absolute;
+  left: 273px;
+  z-index: 2;
+  top: 3180px;
+}
+.image-5 {
+  position: absolute;
+  left: 273px;
+  z-index: 2;
+  top: 3917px;
+}
+
+.line {
+  display: inline-block;
+  height: 2px;
+  width: 335px;
+  background:#721515;
+  position: absolute;
+  left: 334px;
+  transform: rotate(-53deg);
+  z-index: 5;
+}
+
+.line-1 {
+  top: 1185px;
+}
+
+.line-2 {
+  top: 1908px;
+}
+
+.line-3 {
+  top: 2640px;
+}
+
+.line-4 {
+  top: 3385px;
+}
+
+.line-5 {
+  top: 4124px;
+}
+
+.image-two {
+  filter: grayscale(100%);
 }
