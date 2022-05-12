@@ -20,10 +20,10 @@
             <%= image_tag "menu.png", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to 'QUI SOMMES-NOUS ?', qui_sommes_nous_path, class: "dropdown-item" %>
-              <a class="dropdown-item"> EXPERTISE </a>
+              <%= link_to 'EXPERTISE', expertise_path, class: "dropdown-item" %>
               <a class="dropdown-item"> SECTEURS D'ACTIVITÉ </a>
-              <a class="dropdown-item"> PRESTATIONS </a>
-              <a class="dropdown-item"> CONTACT </a>
+              <%= link_to 'PRESTATIONS', prestations_path, class: "dropdown-item" %>
+              <%= link_to 'CONTACT', contact_path, class: "dropdown-item" %>
             </div>
         </li>
       </ul>
