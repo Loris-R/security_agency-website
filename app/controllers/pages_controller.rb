@@ -13,6 +13,10 @@ class PagesController < ApplicationController
     @activities = Activity.all
   end
 
+  def secteurs
+    
+  end
+
   def prestations
     @header = "header-prestations.jpg"
   end

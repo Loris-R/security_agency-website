@@ -7,7 +7,7 @@
       <li>|</li>
       <li><%= link_to 'EXPERTISE', expertise_path %></li>
       <li>|</li>
-      <li><a href="#">SECTEURS D'ACTIVITÉ</a></li>
+      <li><%= link_to 'SECTEURS D\'ACTIVITÉ', secteurs_path %></li>
       <li>|</li>
       <li><%= link_to 'PRESTATIONS', prestations_path %></li>
       <li>|</li>
@@ -21,7 +21,8 @@
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to 'QUI SOMMES-NOUS ?', qui_sommes_nous_path, class: "dropdown-item" %>
               <%= link_to 'EXPERTISE', expertise_path, class: "dropdown-item" %>
-              <a class="dropdown-item"> SECTEURS D'ACTIVITÉ </a>
+              <%= link_to 'SECTEURS D\'ACTIVITÉ', expertise_path, class: "dropdown-item" %>
+              <a class="dropdown-item">  </a>
               <%= link_to 'PRESTATIONS', prestations_path, class: "dropdown-item" %>
               <%= link_to 'CONTACT', contact_path, class: "dropdown-item" %>
             </div>
