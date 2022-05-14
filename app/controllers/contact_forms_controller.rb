@@ -2,8 +2,11 @@ class ContactFormsController < ApplicationController
   def create
     @contact_form = ContactForm.new(contact_form_params)
     if @contact_form.save
+      redirect_to root_path
+      flash[:notice] = 'Votre message à bien été envoyé, nous revenons vers vous rapidement !'
     else
-      render 'contact'
+      redirect_to root_path
+      flash.now[:alert] = 'Il y a eu un petit problème, appelez nous par téléphone le temps qu\'on règle ça !'
     end
   end
 
