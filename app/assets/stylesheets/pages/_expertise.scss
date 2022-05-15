@@ -19,7 +19,7 @@
     color: #595959;
     font-family: "acp";
     font-style: normal;
-    font-size: 60px;  
+    font-size: 60px;
   }
 
   h3 {
@@ -98,9 +98,12 @@
   top: 4124px;
 }
 
-.image-two {
+.image-two, .image-4 {
   filter: grayscale(100%);
 }
 
 @media only screen and (min-width:767px) and (max-width: 1024px) { .image-1 { left: 14px;} .line { left: -7px; transform: rotate(-44deg);} .image-two { margin-left: -176px;} .activities-texts { margin-left: 40px;} .activities-texts p { margin-right: 37px;} .image-2 { left: 14px;} .image-3 { left: 14px;} .image-4 { left: 14px;} .image-5 { left: 14px;}}
 
+@media only screen and (min-width:279px) and (max-width:359px) { .activity { display: flex; flex-direction: column;} .image-two { margin-left: 64px; width: 156px; height: 345px ;} .image-1 { width: 124px; height: 153.5px; left: 27px; top: 943px;} .line { left: 20px; transform: rotate(-47deg); width: 206px;} .activities-texts { margin-left: 47px;} .activities-texts p { margin-right: 67px;} .image-2 { width: 124px; height: 153.5px; left: 27px; width: 124px; top: 1817px;} .image-3 { width: 124px; height: 153.5px; left: 27px; top: 2608px;} .image-4 { width: 124px; height: 153.5px; left: 27px; top: 3460px;} .image-5 { width: 124px; height: 153.5px; left: 27px; top: 4146px;} .line-1 { top: 1053px;} .activities-texts h2 { font-size: 45px; margin-bottom: 1rem; margin-top: 1rem;} .activities-texts h3 { font-size: 18px;} .activities-texts p { font-size: 14px; margin-bottom: 0.5rem;} .activity { margin-left: 0;} .line-2 { top: 1926px;} .line-3 { top: 2716px;} .line-4 { top: 3568px;} .line-5 { top: 4253px;}}
+
+@media only screen and (min-width:360px) and (max-width:541px) { .activity { display: flex; flex-direction: column;} .image-two { margin-left: 64px; width: 156px; height: 345px ;} .image-1 { width: 124px; height: 153.5px; left: 27px; top: 943px;} .line { left: 20px; transform: rotate(-47deg); width: 206px;} .activities-texts { margin-left: 47px;} .activities-texts p { margin-right: 67px;} .image-2 { width: 124px; height: 153.5px; left: 27px; width: 124px; top: 1817px;} .image-3 { width: 124px; height: 153.5px; left: 27px; top: 2608px;} .image-4 { width: 124px; height: 153.5px; left: 27px; top: 3460px;} .image-5 { width: 124px; height: 153.5px; left: 27px; top: 4146px;} .line-1 { top: 1053px;} .activities-texts h2 { font-size: 45px; margin-bottom: 1rem; margin-top: 1rem;} .activities-texts h3 { font-size: 18px;} .activities-texts p { font-size: 14px; margin-bottom: 0.5rem;} .activity { margin-left: 0;} .line-2 { top: 1926px;} .line-3 { top: 2716px;} .line-4 { top: 3568px;} .line-5 { top: 4253px;}}
