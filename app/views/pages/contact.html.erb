@@ -86,6 +86,13 @@
           <%= f.input :email, required: true %>
           <%= f.select :prestation_type, collection: @prestations %>
           <%= f.input :work_description, type: :text %>
+          <div id="rgpd-checkbox">
+            <p>
+              En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être 
+              contacté dans le cadre des services et activités de la société de sécurité Protection +.
+            </p>
+            <%= f.check_box :rgpd %>
+          </div>
           <%= f.submit value="Envoyer" %>
         <% end %>
       </div>
