@@ -8,30 +8,33 @@
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 60px;
+    color: #595959;
+    font-family: "acp";
+    font-style: italic;
   }
 
   h3 {
-    font-size: 1.3rem;
+    color: #771708;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: normal;
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 15px;
   }
 }
 
-.prestation-texts {
-  width: 50%;
-}
 
 .align-right {
   flex-direction: row-reverse;
 }
 
 .text-align-right {
-  margin: 0 6rem 0 21rem;
+  margin: 0 162px 0 194px;
 }
 
 .text-align-left {
-  margin: 0 21rem 0 6rem;
+  margin: 0 162px 0 194px;
 }
