@@ -1,11 +1,6 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/1868e326d3ee28e5395f6efa2bc037bf?family=Eina01-Regular');
 @import url("https://use.typekit.net/qxu7vaj.css");
-
-// Define fonts for body and headers
-$body-font: "Eina01-Regular", "sans-serif";
-$headers-font: "Eina01-Regular", "sans-serif";
 
 @supports (font-variation-settings: normal){
   @font-face {
@@ -16,6 +11,19 @@ $headers-font: "Eina01-Regular", "sans-serif";
  }
 };
 
+@font-face {
+  font-family: "Eina01-Regular"; 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot"); 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.svg#Eina01-Regular") format("svg"); 
+}
+
+// Define fonts for body and headers
+$body-font: "Eina01-Regular", "sans-serif";
+$headers-font: "Eina01-Regular", "sans-serif";
 $my-font: "acp";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
