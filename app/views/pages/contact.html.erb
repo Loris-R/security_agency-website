@@ -82,7 +82,8 @@
       <div id="quote-form">
         <%= simple_form_for(@quote) do |f| %>
           <%= f.input :society_name, required: true %>
-          <%= f.input :email, required: true, label: 'Nom et prénom' %>
+          <%= f.input :name, required: true, label: 'Nom et prénom' %>
+          <%= f.input :email, required: true %>
           <%= f.select :prestation_type, collection: @prestations %>
           <%= f.input :work_description, type: :text %>
           <%= f.submit value="Envoyer" %>
