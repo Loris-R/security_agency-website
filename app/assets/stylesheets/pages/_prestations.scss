@@ -19,6 +19,7 @@
     text-transform: uppercase;
     font-size: 20px;
     font-style: normal;
+    font-family: "acp";
   }
 
   p {
@@ -32,9 +33,60 @@
 }
 
 .text-align-right {
-  margin: 0 162px 0 194px;
+  margin: 0 124px 0 113px;
 }
 
 .text-align-left {
-  margin: 0 162px 0 194px;
+  margin: 0 136px 0 166px;
+}
+
+.baille-one {
+  position: relative;
+  left: 195px;
+  top: -119px;
+  width: 308px !important;
+  height: 438px;
+}
+
+.baille-two {
+  position: relative;
+  z-index: 3;
+  left: 37px;
+  top: 160px;
+  width: 308px !important;
+  height: 310px;
+}
+
+.line-prestation {
+  height: 2px;
+  width: 849px;
+  background: #721515;
+  position: relative;
+  top: -247px;
+  left: -12px;
+  transform: rotate(59deg);
+  z-index: 4;
+}
+
+.pics-prestation {
+  width: 50vw;
+  margin-bottom: 85px;
+}
+
+.baille-three {
+  margin-top: 83px;
+  margin-bottom: 48px;
+}
+
+.some-marge {
+  margin-bottom: 80px;
+}
+
+.pics-prestation-two {
+  width: 50vw;
+  margin-bottom: 136px;
+}
+
+.last {
+  margin-bottom: 80px;
 }
