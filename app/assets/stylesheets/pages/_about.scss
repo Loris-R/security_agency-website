@@ -13,9 +13,10 @@
   img {
     height: 662px;
     width: 373px;
+    margin-left: 64px;
   }
 
-  h2 { 
+  h2 {
     color: #595959;
     margin-bottom: 20px;
   }
@@ -31,24 +32,24 @@
 
 #about-text {
   width: 348px;
-  margin-right: 64px;
+  margin-left: 335px;
 
   ul {
     padding-left: 0;
   }
 }
 
-.line { 
+.line-about {
   display: inline-block;
   height: 2px;
   width: 335px;
   background:#721515;
-  position: absolute;
-  top: 1091px;
-  left: 676px;
+  position: relative;
+  top: -222px;
+  left: -470px;
   transform: rotate(41deg);
 }
 
-@media only screen and (min-width:767px) and (max-width: 1024px) { #about-text { width: 262px; margin-right: 25px;} #about h2 { font-size: 2.5rem; margin-bottom: 8px;} #about-text p { font-size: 15px;} #about-text ul { font-size: 15px;} #about img { width: 300px;} .line { top: 1107px; left: 241px; transform: rotate(48deg);}}
+@media only screen and (min-width:767px) and (max-width: 1024px) { #about-text { width: 453px; margin-right: 23px; margin-left: 85px;} #about h2 { font-size: 2.5rem; margin-bottom: 8px;} #about-text p { font-size: 15px;} #about-text ul { font-size: 15px;} #about img { width: 300px; margin-left: 48px;} .line-about { top: -554px; left: -46px; transform: rotate(48deg);}}
 
-@media only screen and (min-width:279px) and (max-width:766px) { #about-text { width: 191px; margin: auto;} #about h2 { font-size: 1.5rem; margin: 8px 0 8px 0;} #about-text p { font-size: 10px;} #about-text ul { font-size: 10px;} #about img { width: 217.5px; height: 356px; margin: auto;} .line { top: 976px; left: -11px;  width: 165px; transform: rotate(43deg);} #about { flex-direction: column-reverse; margin: 2rem auto;} #about .dif { font-size: 13px;} br { display: none;} .banner h1 { font-size: 39px;}}
+@media only screen and (min-width:279px) and (max-width:766px) { #about-text { width: 191px; margin: auto;} #about h2 { font-size: 1.5rem; margin: 8px 0 8px 0;} #about-text p { font-size: 10px;} #about-text ul { font-size: 10px;} #about img { width: 217.5px; height: 356px;} .line-about { top: -314px; left: 10px;  width: 165px; transform: rotate(43deg);} #about { flex-direction: column-reverse; margin: 2rem auto;} #about .dif { font-size: 13px;} br { display: none;} .banner h1 { font-size: 39px;} .stick-to { padding: 26px;}}
