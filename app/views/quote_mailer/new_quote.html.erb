@@ -16,7 +16,7 @@
     font-family: "Eina01-Regular";
   }
 
-  #contact-mail-body {
+  #quote-mail-body {
     background-color: #B48482;
     color: white;
     padding: 24px 0 24px 16px;
@@ -27,16 +27,16 @@
   }
 </style>
 
-<div id="contact-mail-body">
-  <h2>Nouveau message de <%= @user_full_name %></h2>
-  <h3><%= "Ceci est une candidature spontanée" if @contact_form.is_application == true %></h3>
+<div id="quote-mail-body">
+  <h2>Nouvelle demande de devis de la part de <%= @quote.society_name %></h2>
 
-  <h3>Coordonnées :</h3>
+  <h3>Informations :</h3>
   <ul>
-    <li><strong>Nom :</strong> <%= @user_full_name %></li>
-    <li><strong>Email :</strong> <%= @contact_form.email %></li>
-    <li><strong>Téléphone :</strong> <%= @contact_form.phone_number %></li>
+    <li><strong>Société :</strong> <%= @quote.society_name %></li>
+    <li><strong>Nom :</strong> <%= @quote.name %></li>
+    <li><strong>Email :</strong> <%= @quote.email %></li>
+    <li><strong>Prestation :</strong> <%= @quote.prestation_type %></li>
   </ul>
-  <h3>Message :</h3>
-  <p><%= @contact_form.message %></p>
+  <h3>Description :</h3>
+  <p><%= @quote.work_description %></p>
 </div>
