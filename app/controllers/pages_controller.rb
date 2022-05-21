@@ -28,4 +28,8 @@ class PagesController < ApplicationController
     @quote = Quote.new
     @contact_form = ContactForm.new
   end
+
+  def mail
+
+  end
 end
