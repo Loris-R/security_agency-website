@@ -29,3 +29,39 @@
     width: 350px;
   }
 }
+
+.white, .form-label {
+  color: white;
+  font-size: 15px;
+}
+
+.pink {
+  background-color: #72151585;
+}
+
+.oui {
+  display: flex;
+  flex-direction: row;
+}
+
+.red {
+  color: #721515;
+}
+
+.top {
+  font-size: 60px;
+}
+
+.ital {
+  font-size: 16px;
+  font-style: italic;
+  font-family: "acp";
+}
+
+#contact_form_is_application, #contact_form_rgpd {
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  background-color: white;
+  margin-right: 7px;
+}
