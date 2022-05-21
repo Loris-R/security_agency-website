@@ -1,7 +1,8 @@
 class ContactFormsController < ApplicationController
   def create
     @contact_form = ContactForm.new(contact_form_params)
-    if @contact_form.save
+    if @contact_form.save!
+      raise
       redirect_to root_path
       flash[:notice] = 'Votre message à bien été envoyé, nous revenons vers vous rapidement !'
     else

@@ -6,8 +6,7 @@ class ContactFormMailer < ApplicationMailer
   #   en.contact_form_mailer.new_contact.subject
   #
   def new_contact
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+    @user_email = params[:contact_form][:email]
+    mail(to: @user_email, subject: 'Nouvelle demande de contact sur l\'Azuréenne Sécurité')
   end
 end
