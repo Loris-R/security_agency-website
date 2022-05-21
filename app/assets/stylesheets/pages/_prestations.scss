@@ -55,6 +55,7 @@
   top: 160px;
   width: 308px !important;
   height: 310px;
+  display: block;
 }
 
 .line-prestation {
@@ -66,6 +67,7 @@
   left: -12px;
   transform: rotate(59deg);
   z-index: 4;
+  display: block;
 }
 
 .pics-prestation {
@@ -90,3 +92,6 @@
 .last {
   margin-bottom: 80px;
 }
+
+@media only screen and (min-width:767px) and (max-width: 1024px) { .prestation h2 { font-size: 40px; margin-bottom: 1rem;} .text-align-left, .text-align-right { margin: 0 20px;} .prestation h3 { font-size: 16px;} .prestation p { font-size: 13px; margin-bottom: 2rem;} .baille-one { left: 38px; top: 0px; width: 251px !important;
+height: 362px; margin: 2rem 4rem 2rem 0;} .baille-two { display: none;} .line-prestation { display: none;} .baille-three { margin-top: 25px;} .pics-prestation-two { margin-bottom: -10px;} .pics-prestation { margin-bottom: 0;}}
