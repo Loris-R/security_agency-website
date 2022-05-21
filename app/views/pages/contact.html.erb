@@ -1,56 +1,66 @@
-<div id="contact">
-  <div id="contactez-nous">
-    <h2>Contactez-nous sans engagement</h2>
-    <div id="contact-elements">
-      <div id="contact-form">
-        <%= simple_form_for(@contact_form) do |f| %>
-          <%= f.input :first_name, required: true %>
-          <%= f.input :last_name, required: true %>
-          <%= f.input :email, required: true %>
-          <%= f.input :phone_number %>
-          <p><%= "Souhaitez-vous déposer une candidature spontanée ?" %></p>
-          <%= f.check_box :is_application %>
-          <%= f.input :message, type: :text %>
-          <div id="rgpd-checkbox">
-            <p>
-              En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être 
-              contacté dans le cadre des services et activités de la société de sécurité Protection +.
-            </p>
-            <%= f.check_box :rgpd %>
-          </div>
-          <%= f.submit value="Envoyer" %>
-        <% end %>
-      </div>
-      <div id="contact-text">
-        <h3>Adresse</h3>
-        <p>
-          Parc de la Roseraie Bat<br>
-          A1 20 Traverse de<br>
-          la Buzine13011 Marseille<br>
-        </p>
-        <h3>Numéros</h3>
-        <p>04.91.44.90.11</p>
-        <p>04.91.44.89.58</p>
-        <h3>Infos légales</h3>
-        <p>
-          SAS Protection +<br>
-          SIRET : 501946412 00035<br>
-          Président de la SAS : Volodymyr TCHEREDNITCHENKO<br>
-          Sité Hébergé chez Nuxit France<br>
-          Tout droit de reproduction soumis à autorisation expresse.<br>
-        </p>
-        <p>
-          Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des services 
-          et activités de la société de sécurité Protection +.
-        </p>
-        <p>
-          Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès, de rectification, d’effacement, 
-          de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit, merci d’effectuer votre demande 
-          auprès de la société de sécurité Protection + (par mail ou par courrier).
-        </p>
+<div class="pink">
+  <div id="contact">
+    <div id="contactez-nous">
+      <h2 class="white top">Contactez-nous sans engagement</h2>
+      <div id="contact-elements">
+        <div id="contact-form">
+         <p class="red"> Les champs marqués d’un * sont obligatoires </p>
+          <%= simple_form_for(@contact_form) do |f| %>
+            <%= f.input :first_name, required: true, label: "Prenom:" %>
+            <%= f.input :last_name, required: true,  label: "Nom:" %>
+            <%= f.input :email, required: true,  label: "Email:" %>
+            <%= f.input :phone_number,  label: "Telephone:" %>
+            <p class="white ital"><%= "Souhaitez-vous déposer une candidature spontanée ?" %></p>
+            <div class="oui">
+              <%= f.check_box :is_application %>
+              <p class="white ital"> Oui </p>
+            </div>
+            <%= f.input :message, type: :text %>
+            <div id="rgpd-checkbox">
+              <p class="white">
+                En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être
+                contacté dans le cadre des services et activités de la société de sécurité Protection +.
+              </p>
+              <div class="oui">
+                <%= f.check_box :rgpd %>
+                <p class="white"> RGPD </p>
+              </div>
+            </div>
+            <%= f.submit value="Envoyer" %>
+          <% end %>
+        </div>
+        <div id="contact-text">
+          <h3 class="red">Adresse</h3>
+          <p class="white">
+            Parc de la Roseraie Bat<br>
+            A1 20 Traverse de<br>
+            la Buzine13011 Marseille<br>
+          </p>
+          <h3 class="red">Numéros</h3>
+          <p class="white">04.91.44.90.11</p>
+          <p class="white">04.91.44.89.58</p>
+          <h3 class="red">Infos légales</h3>
+          <p class="white">
+            SAS Protection +<br>
+            SIRET : 501946412 00035<br>
+            Président de la SAS : Volodymyr TCHEREDNITCHENKO<br>
+            Sité Hébergé chez Nuxit France<br>
+            Tout droit de reproduction soumis à autorisation expresse.<br>
+          </p>
+          <p class="white">
+            Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des services
+            et activités de la société de sécurité Protection +.
+          </p>
+          <p class="white">
+            Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès, de rectification, d’effacement,
+            de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit, merci d’effectuer votre demande
+            auprès de la société de sécurité Protection + (par mail ou par courrier).
+          </p>
+        </div>
       </div>
     </div>
   </div>
+</div>
   <div id="quote">
     <h2>Demandez un devis gratiut sans engagement</h2>
     <div id="quote-elements">
@@ -70,12 +80,12 @@
           Security Business<br>
         </p>
         <p>
-          Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des 
+          Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des
           services et activités de la société de sécurité Protection +.
         </p>
         <p>
-          Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès, 
-          de rectification, d’effacement, de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit, 
+          Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès,
+          de rectification, d’effacement, de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit,
           merci d’effectuer votre demande auprès de la société de sécurité Protection + (par mail ou par courrier).
         </p>
       </div>
@@ -88,7 +98,7 @@
           <%= f.input :work_description, type: :text %>
           <div id="rgpd-checkbox">
             <p>
-              En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être 
+              En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être
               contacté dans le cadre des services et activités de la société de sécurité Protection +.
             </p>
             <%= f.check_box :rgpd %>
@@ -98,4 +108,3 @@
       </div>
     </div>
   </div>
-</div>

@@ -23,12 +23,14 @@
     </div>
   </div>
   <div class="prestation">
-    <%= image_tag('prestation-surveillance-bailleur-1.jpg') %>
-    <%= image_tag('prestation-surveillance-bailleur-2.jpg') %>
+    <div class="pics-prestation">
+      <%= image_tag('prestation-surveillance-bailleur-1.jpg', class: "baille-one") %>
+      <%= image_tag('prestation-surveillance-bailleur-2.jpg', class: "baille-two") %>
+      <div class="line-prestation"></div>
+    </div>
     <div class="prestation-texts text-align-left">
-      <h2>
-        Surveillance<br>
-        Bailleurs sociaux
+      <h2 class="baille-three">
+        Surveillance Bailleurs sociaux
       </h2>
       <p>
         Cœur de notre métier : Surveillance mobile pour Bailleurs sociaux, syndics de copropriété, résidence.
@@ -67,12 +69,15 @@
     </div>
   </div>
   <div class="prestation">
-    <%= image_tag('prestation-intervention-1.jpg') %>
-    <%= image_tag('prestation-intervention-2.jpg') %>
+    <div class="pics-prestation-two">
+      <%= image_tag('prestation-intervention-1.jpg', class: "baille-one") %>
+      <%= image_tag('prestation-intervention-2.jpg', class: "baille-two") %>
+      <div class="line-prestation"></div>
+    </div>
     <div class="prestation-texts text-align-left">
-      <h2>Intervention malveillante</h2>
+      <h2 class="baille-three">Intervention malveillante</h2>
       <h3>LES AGENTS DE SÉCURITÉ EFFECTUENT DES MISSIONS DE CONTRÔLE, DE RONDE DE SURVEILLANCE.</h3>
-      <p>
+      <p class="some-marge">
         Ces missions ont pour objectif : La prévention des risques de malveillance et d’incendie, de dégradations ou de vols de biens.
         Les interventions peuvent s’effectuer sur différents sites tels que : parkings, entrepôts, magasins, habitations,
         chantiers en cours de construction, matériels, habitations, collectivités locales, … de façon ponctuelle ou permanente.<br>
@@ -82,7 +87,7 @@
       </p>
     </div>
   </div>
-  <div class="prestation align-right">
+  <div class="prestation align-right last">
   <%= image_tag('prestation-securite-evenementielle.jpg') %>
     <div class="prestation-texts text-align-right">
       <h2>Sécurité événementielle</h2>
