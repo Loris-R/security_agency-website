@@ -10,5 +10,4 @@ Rails.application.routes.draw do
   get 'secteurs-dactivité', to: 'pages#secteurs', as: 'secteurs'
   get 'prestations', to: 'pages#prestations'
   get 'contact', to: 'pages#contact'
-  get 'mail', to: 'pages#mail'
 end

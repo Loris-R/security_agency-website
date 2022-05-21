@@ -1,12 +1,41 @@
-<div>
-  <h1>Nouveau formulaire de contact</h1>
+<style>
+@font-face {
+  font-family: "Eina01-Regular"; 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot"); 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.svg#Eina01-Regular") format("svg"); 
+}
+
+  body {
+    background-color: #FCFCF8;
+    width: 750px;
+    margin: 0 auto;
+    font-family: "Eina01-Regular";
+  }
+
+  #contact-mail-body {
+    background-color: #B48482;
+    color: white;
+    padding: 24px 0 24px 16px;
+  }
+
+  #contact-mail-body h2 {
+    text-decoration: underline;
+  }
+</style>
+
+<div id="contact-mail-body">
+  <h2>Nouveau message de <%= @user_full_name %></h2>
   <h3><%= "Ceci est une candidature spontanée" if params[:contact_form][:is_application] == true %></h3>
 
-  <h3>Envoyé par : <%= @user_full_name %></h3>
   <h3>Coordonnées :</h3>
   <ul>
-    <li>Email : <%= params[:contact_form][:email] %></li>
-    <li>Téléphone : <%= params[:contact_form][:phone_number] %></li>
+    <li><strong>Nom :</strong> <%= @user_full_name %></li>
+    <li><strong>Email :</strong> <%= params[:contact_form][:email] %></li>
+    <li><strong>Téléphone :</strong> <%= params[:contact_form][:phone_number] %></li>
   </ul>
   <h3>Message :</h3>
   <p><%= params[:contact_form][:message] %></p>
