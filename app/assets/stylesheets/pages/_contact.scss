@@ -37,6 +37,17 @@
 
 .pink {
   background-color: #72151585;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
+  height: 135vh;
+  width: 100vw;
+
+}
+
+.contactez-nous {
+  position: absolute;
+  top: 500px;
+  left: 0;
 }
 
 .oui {
@@ -64,4 +75,23 @@
   appearance: none;
   background-color: white;
   margin-right: 7px;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+.style {
+  font-family: "acp";
+  font-style: italic;
+  font-size: 40px;
+}
+
+.button {
+  color: white;
+  background-color: #721515;
+  font-family: "acp";
+  font-style: italic;
+  border: none;
+  font-size: 30px;
 }
