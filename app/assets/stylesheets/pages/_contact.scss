@@ -20,6 +20,8 @@
 
 #quote-elements {
   display: flex;
+  justify-content: space-between;
+  padding: 0 13rem;
 }
 
 #quote-form {
@@ -30,16 +32,17 @@
   }
 }
 
-.white, .form-label {
+.white  {
   color: white;
   font-size: 15px;
+  margin-right: 5px;
 }
 
 .pink {
   background-color: #72151585;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
-  height: 135vh;
+  height: 162vh;
   width: 100vw;
 
 }
@@ -69,11 +72,9 @@
   font-family: "acp";
 }
 
-#contact_form_is_application, #contact_form_rgpd {
+#contact_form_is_application, #contact_form_rgpd, #quote_rgpd {
   width: 24px;
   height: 24px;
-  appearance: none;
-  background-color: white;
   margin-right: 7px;
 }
 
@@ -94,4 +95,56 @@
   font-style: italic;
   border: none;
   font-size: 30px;
+  padding: 0.1rem 2.5rem;
+}
+
+#rgpd-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact_form_message, #quote_work_description {
+  width: 397px;
+  height: 305px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa {
+  color: #721515;
+  padding: 2px;
+  margin-right: 9px;
+}
+
+abbr, .stars {
+  color:#721515;
+}
+
+.pad {
+  padding: 5px 0;
+}
+
+.input {
+  color: white;
+}
+
+#quote-form {
+  position: relative;
+  top: -164px;
+}
+
+.title-two {
+  width: 34vw;
+}
+
+.type {
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+#quote_society_name, #quote_name, #quote_email, #quote_prestation_type, #quote_work_description, #quote_rgpd {
+  background-color: #C6C6C6;
 }
