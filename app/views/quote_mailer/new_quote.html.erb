@@ -28,7 +28,7 @@
 </style>
 
 <div id="quote-mail-body">
-  <h2>Nouvelle demande de devis de la part de <%= @quote.society_name %></h2>
+  <h2>Demande de devis de la part de <%= @quote.society_name %></h2>
 
   <h3>Informations :</h3>
   <ul>
@@ -38,5 +38,5 @@
     <li><strong>Prestation :</strong> <%= @quote.prestation_type %></li>
   </ul>
   <h3>Description :</h3>
-  <p><%= @quote.work_description %></p>
+  <p><%= simple_format(@quote.work_description) %></p>
 </div>
