@@ -40,3 +40,7 @@ yarn-debug.log*
 # Ignore Mac and Linux file system files
 *.swp
 .DS_Store
+
+# Ignore development & production files with login infos for mailer
+/config/environments/development.rb
+/config/environments/production.rb
