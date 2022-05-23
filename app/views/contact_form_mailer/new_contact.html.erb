@@ -38,5 +38,5 @@
     <li><strong>Téléphone :</strong> <%= @contact_form.phone_number %></li>
   </ul>
   <h3>Message :</h3>
-  <p><%= @contact_form.message %></p>
+  <p><%= simple_format(@contact_form.message) %></p>
 </div>
