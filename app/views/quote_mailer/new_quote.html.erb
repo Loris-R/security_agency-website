@@ -1,0 +1,42 @@
+<style>
+@font-face {
+  font-family: "Eina01-Regular"; 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot"); 
+  src: url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.svg#Eina01-Regular") format("svg"); 
+}
+
+  body {
+    background-color: #FCFCF8;
+    width: 750px;
+    margin: 0 auto;
+    font-family: "Eina01-Regular";
+  }
+
+  #quote-mail-body {
+    background-color: #B48482;
+    color: white;
+    padding: 24px 0 24px 16px;
+  }
+
+  #contact-mail-body h2 {
+    text-decoration: underline;
+  }
+</style>
+
+<div id="quote-mail-body">
+  <h2>Nouvelle demande de devis de la part de <%= @quote.society_name %></h2>
+
+  <h3>Informations :</h3>
+  <ul>
+    <li><strong>Société :</strong> <%= @quote.society_name %></li>
+    <li><strong>Nom :</strong> <%= @quote.name %></li>
+    <li><strong>Email :</strong> <%= @quote.email %></li>
+    <li><strong>Prestation :</strong> <%= @quote.prestation_type %></li>
+  </ul>
+  <h3>Description :</h3>
+  <p><%= @quote.work_description %></p>
+</div>
