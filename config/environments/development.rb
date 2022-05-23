@@ -3,17 +3,19 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
-  # SMTP settings for gmail
-  # config.action_mailer.smtp_settings = {
-  #   :address              => "smtp.gmail.com",
-  #   :port                 => 587,
-  #   :user_name            => "xxxxxxxxxxxxx",
-  #   :password             => "xxxxxxxxxxxxxxxx",
-  #   :authentication       => "plain",
-  #   :enable_starttls_auto => true
-  # }
+  config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  # SMTP settings for ionos
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.ionos.fr",
+    :port                 => 587,
+    :user_name            => "contact@lap-securite.com",
+    :password             => "CsakebonAzureenne!",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.perform_deliveries = true
 
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
