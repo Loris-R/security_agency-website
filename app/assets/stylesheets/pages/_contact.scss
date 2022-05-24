@@ -162,3 +162,7 @@ abbr, .stars {
 @media only screen and (min-width:767px) and (max-width: 1024px) {
   #contact-form { margin-right: 5rem; margin-left: 2rem;} #quote-elements { padding: 0; justify-content: center;} #quote-form { margin-left: 1.8rem; margin-right: 1rem;} #quote-text { margin-left: 1rem;}
 }
+
+@media only screen and (min-width:279px) and (max-width:766px) {
+ #contact-elements { flex-direction: column;} #contact-form { margin: 0;}
+ .top, .title-two { width: 95%; font-size: 45px; text-align: center;} .red { text-align: center;} #contact-form form, #quote-form form { width: 92%; text-align: center; margin: auto;} .oui { justify-content: center;} #contact_form_message, #quote_work_description { width: 100%; height: 250px;} #contact-text { margin-top: 3rem; text-align: center;} .pink { clip-path: polygon(0 0, 100% 0, 100% 68%, 0 73%); height: 2845px;} .style { font-size: 34px;} .phones { justify-content: center;} .narrow { margin: auto; width: 80%;} #quote-elements { flex-direction: column-reverse; padding: 0;} #quote-form { position: relative; margin-left: 0; top: -716px;} #quote-text { margin: -39rem auto 3rem auto; width: 80%; text-align: center;} .type { font-size: 34px;}}
