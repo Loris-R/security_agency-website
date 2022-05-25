@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def expertise
-    
+    @header = "header-expertise.jpg"
   end
 
   def secteurs
