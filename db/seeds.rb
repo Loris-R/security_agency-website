@@ -145,7 +145,7 @@ img = Image.new(file_name: "btp3.jpg",
 img.save!
 
 puts "creating zone de stockage activity..."
-activity = Activity.new(title: "Zone de stockage",
+activity = Activity.new(title: "Carrière et transport",
             subtitle: "",
             description: ""
 )
