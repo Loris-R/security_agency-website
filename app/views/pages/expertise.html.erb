@@ -12,8 +12,8 @@
             <%= image_tag(activity.images[2].file_name, class:"image-two")  %>
           </div>
           <div class="activities-texts">
-            <h2><%= activity.title %></h2>
-            <h3><%= activity.subtitle %></h3>
+            <h2><%= activity.title == "Bâtiment" ? activity.subtitle : activity.title %></h2>
+            <h3><%= activity.subtitle if activity.title != "Bâtiment" %></h3>
             <p><%= activity.description %></p>
           </div>
         </div>
