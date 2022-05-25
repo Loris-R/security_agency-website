@@ -4,7 +4,7 @@ Activity.destroy_all
 # Create all activities with their images
 puts "creating Batiment activity..."
 activity = Activity.new(title: "Bâtiment",
-            subtitle: "Bailleurs sociaux, syndics, villas...",
+            subtitle: "Bailleurs sociaux, syndics",
             description: "Notre professionnalisme et le sérieux de nos agents nous ont spécialisé dans l’application de la tranquillité résidentielle 
                           au sein des copropriétés, des bailleurs sociaux…\n
                           Ce secteur d’activité couvre tout le territoire national : contrôle d’accès selon les spécificités de votre copropriété, 
@@ -32,8 +32,8 @@ img = Image.new(file_name: "bâtiment3.jpg",
 img.save!
 
 puts "creating parking activity..."
-activity = Activity.new(title: "Parking",
-            subtitle: "Parking et zone de stockage",
+activity = Activity.new(title: "Résidence",
+            subtitle: "",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
                           Le plus souvent : protection des biens et des lieux pour éviter toute intrusion, dégradation, vol. En cas de problème, 
                           il pourra intervenir très rapidement pour preserver la sécurité des zones sous surveillance."
@@ -41,19 +41,19 @@ activity = Activity.new(title: "Parking",
 activity.save!
 
 puts "parking's images..."
-img = Image.new(file_name: "parking1.jpg",
+img = Image.new(file_name: "résidence1.jpg",
   page: "home",
   activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "parking2.jpg",
+img = Image.new(file_name: "résidence2.jpg",
   page: "expertise",
   activity_id: activity.id
 )
 img.save!
 
-img = Image.new(file_name: "parking3.jpg",
+img = Image.new(file_name: "résidence3.jpg",
   page: "expertise",
   activity_id: activity.id
 )
@@ -88,32 +88,32 @@ img = Image.new(file_name: "hôtel3.jpg",
 )
 img.save!
 
-puts "creating evenement activity..."
-activity = Activity.new(title: "Evènement",
-            subtitle: "Evènnementiel",
-            description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
-                          Le plus souvent : contrôle de billet, palpation, surveillance des dangers potentiels (colis suspect par exemple)…"
-)
-activity.save!
+# puts "creating evenement activity..."
+# activity = Activity.new(title: "Evènement",
+#             subtitle: "Evènnementiel",
+#             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
+#                           Le plus souvent : contrôle de billet, palpation, surveillance des dangers potentiels (colis suspect par exemple)…"
+# )
+# activity.save!
 
-puts "evenement's images..."
-img = Image.new(file_name: "evènement1.jpg",
-  page: "home",
-  activity_id: activity.id
-)
-img.save!
+# puts "evenement's images..."
+# img = Image.new(file_name: "evènement1.jpg",
+#   page: "home",
+#   activity_id: activity.id
+# )
+# img.save!
 
-img = Image.new(file_name: "evènement2.jpg",
-  page: "expertise",
-  activity_id: activity.id
-)
-img.save!
+# img = Image.new(file_name: "evènement2.jpg",
+#   page: "expertise",
+#   activity_id: activity.id
+# )
+# img.save!
 
-img = Image.new(file_name: "evènement3.jpg",
-  page: "expertise",
-  activity_id: activity.id
-)
-img.save!
+# img = Image.new(file_name: "evènement3.jpg",
+#   page: "expertise",
+#   activity_id: activity.id
+# )
+# img.save!
 
 puts "creating BTP activity..."
 activity = Activity.new(title: "BTP",
