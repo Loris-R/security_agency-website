@@ -3,6 +3,7 @@ lock "~> 3.17.0"
 
 set :application, "azureenne"
 set :repo_url, "git@github.com:Loris-R/security_agency-website.git"
+set :passenger_restart_with_touch, false
 
 # Optionally, you can symlink your database.yml and/or secrets.yml file from the shared directory during deploy
 # This is useful if you don't want to use ENV variables
