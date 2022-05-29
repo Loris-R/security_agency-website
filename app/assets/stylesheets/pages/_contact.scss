@@ -1,3 +1,12 @@
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact-elements {
+  display: flex;
+}
+
 #contact-form {
   margin-right: 10rem;
 
@@ -5,12 +14,12 @@
     width: 350px;
   }
 }
+#contact-text {
+  max-width: 400px;
+}
 
-
-#quote-elements, #contact-elements {
+#quote-elements {
   display: flex;
-  justify-content: space-between;
-  padding: 0 13rem;
 }
 
 #quote-form {
@@ -21,26 +30,13 @@
   }
 }
 
-.white  {
+.white, .form-label {
   color: white;
   font-size: 15px;
-  margin-right: 5px;
 }
 
 .pink {
   background-color: #72151585;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
-
-  height: 1760px;
-  width: 100%;
-
-}
-
-.contactez-nous {
-  position: absolute;
-  top: 500px;
-  left: 0;
 }
 
 .oui {
@@ -52,15 +48,8 @@
   color: #721515;
 }
 
-.top, .title-two {
-  font-size: 60px;
-  margin-top: 2rem;
-  line-height: 3rem;
-  margin-bottom: 1rem;
-}
-
 .top {
-  width: 30vw;
+  font-size: 60px;
 }
 
 .ital {
@@ -69,96 +58,10 @@
   font-family: "acp";
 }
 
-#contact_form_is_application, #contact_form_rgpd, #quote_rgpd {
+#contact_form_is_application, #contact_form_rgpd {
   width: 24px;
   height: 24px;
+  appearance: none;
+  background-color: white;
   margin-right: 7px;
 }
-
-.weight {
-  font-weight: bold;
-}
-
-.style {
-  font-family: "acp";
-  font-style: italic;
-  font-size: 40px;
-}
-
-.button {
-  color: white;
-  background-color: #721515;
-  font-family: "acp";
-  font-style: italic;
-  border: none;
-  font-size: 30px;
-  padding: 0.1rem 2.5rem;
-}
-
-#rgpd-checkbox {
-  display: flex;
-  flex-direction: row;
-}
-
-#contact_form_message, #quote_work_description {
-  width: 349px;
-  height: 305px;
-}
-
-.phones {
-  display: flex;
-  flex-direction: row;
-}
-
-.fa {
-  color: #721515;
-  padding: 2px;
-  margin-right: 9px;
-}
-
-abbr, .stars {
-  color:#721515;
-}
-
-.pad {
-  padding: 5px 0;
-}
-
-.input {
-  color: white;
-}
-
-#quote-form {
-  position: relative;
-  top: -469px;
-}
-
-.title-two {
-  width: 36vw;
-}
-
-#quote-text {
-  margin-top: -11rem;
-}
-
-.type {
-  font-size: 40px;
-  margin-bottom: 28px;
-}
-
-#quote_society_name, #quote_name, #quote_email, #quote_prestation_type, #quote_work_description, #quote_rgpd {
-  background-color: #C6C6C6;
-}
-
-#contact-text {
-  margin-top: 11rem;
-}
-
-@media only screen and (min-width:767px) and (max-width: 1024px) {
-  #contact-form { margin-right: 5rem; margin-left: 2rem;} #quote-elements, #contact-elements { padding: 0; justify-content: center;} #quote-form { margin-left: 1.8rem; margin-right: 1rem;} #quote-text { margin-left: 1rem;}
-  .pink {clip-path: polygon(0 0, 100% 0, 100% 57%, 0 80%);}
-}
-
-@media only screen and (min-width:279px) and (max-width:766px) {
- #contact-elements { flex-direction: column;} #contact-form { margin: 0;}
- .top, .title-two { width: 95%; font-size: 45px; text-align: center;} .red { text-align: center;} #contact-form form, #quote-form form { width: 92%; text-align: center; margin: auto;} .oui { justify-content: center;} #contact_form_message, #quote_work_description { width: 100%; height: 250px;} #contact-text { margin-top: 3rem; text-align: center;} .pink { clip-path: polygon(0 0, 100% 0, 100% 68%, 0 73%); height: 2845px;} .style { font-size: 34px;} .phones { justify-content: center;} .narrow { margin: auto; width: 80%;} #quote-elements { flex-direction: column-reverse; padding: 0;} #quote-form { position: relative; margin-left: 0; top: -716px;} #quote-text { margin: -39rem auto 3rem auto; width: 80%; text-align: center;} .type { font-size: 34px;} #contact-elements { padding:0; }}

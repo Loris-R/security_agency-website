@@ -9,12 +9,12 @@ class PagesController < ApplicationController
   end
 
   def expertise
-    @header = "header-expertise.jpg"
+    @header = "header-activities.jpg"
+    @activities = Activity.all
   end
 
   def secteurs
-    @header = "header-activities.jpg"
-    @activities = Activity.all
+    
   end
 
   def prestations

@@ -1,73 +1,60 @@
 <div class="pink">
   <div id="contact">
     <div id="contactez-nous">
+      <h2 class="white top">Contactez-nous sans engagement</h2>
       <div id="contact-elements">
         <div id="contact-form">
-        <h2 class="white top">Contactez-nous sans engagement</h2>
          <p class="red"> Les champs marqués d’un * sont obligatoires </p>
           <%= simple_form_for(@contact_form) do |f| %>
-          <label for="contact_form_first_name", class="input"> Prenom:<span class="stars">*</span> </label>
-            <%= f.input :first_name, required: true, label: false %>
-            <label for="contact_for_last_name", class="input"> Nom:<span class="stars">*</span> </label>
-            <%= f.input :last_name, required: true, label: false %>
-            <label for="contact_form_email", class="input"> Email:<span class="stars">*</span> </label>
-            <%= f.input :email, required: true,  label: false %>
-            <label for="contact_form_phone_number", class="input"> Telephone:<span class="stars">*</span> </label>
-            <%= f.input :phone_number,  label: false %>
+            <%= f.input :first_name, required: true, label: "Prenom:" %>
+            <%= f.input :last_name, required: true,  label: "Nom:" %>
+            <%= f.input :email, required: true,  label: "Email:" %>
+            <%= f.input :phone_number,  label: "Telephone:" %>
             <p class="white ital"><%= "Souhaitez-vous déposer une candidature spontanée ?" %></p>
             <div class="oui">
-              <%= f.input :is_application, as: :boolean, required: true, label: false %>
-              <label for="contact_form_is_application">
-              <p class="white ital"> Oui <span class="stars">*</span></p>
+              <%= f.check_box :is_application %>
+              <p class="white ital"> Oui </p>
             </div>
-            <label for="contact_form_message", class="input"> Message<span class="stars">*</span> </label>
-            <%= f.input :message, type: :text, label: false %>
+            <%= f.input :message, type: :text %>
             <div id="rgpd-checkbox">
               <p class="white">
                 En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être
-                contacté dans le cadre des services et activités de la société de sécurité l'Azuréenne.
+                contacté dans le cadre des services et activités de la société de sécurité Protection +.
               </p>
               <div class="oui">
-                <%= f.input :rgpd, as: :boolean, required: true, label: false %>
-                 <label for="contact_form_rgpd">
-                <p class="white pad"> RGPD<span class="stars">*</span> </p>
+                <%= f.check_box :rgpd %>
+                <p class="white"> RGPD </p>
               </div>
             </div>
-            <%= f.submit value="Envoyer", :class => "button" %>
+            <%= f.submit value="Envoyer" %>
           <% end %>
         </div>
         <div id="contact-text">
-          <h3 class="red style">Adresse</h3>
+          <h3 class="red">Adresse</h3>
           <p class="white">
             Parc de la Roseraie Bat<br>
             A1 20 Traverse de<br>
             la Buzine13011 Marseille<br>
           </p>
-          <h3 class="red style">Numéros</h3>
-          <div class="phones">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <p class="white">04.91.44.90.11</p>
-          </div>
-          <div class="phones">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <p class="white">04.91.44.89.58</p>
-          </div>
-          <h3 class="red style">Infos légales</h3>
-          <p class="white narrow">
-            L'Azuréenne<br>
-          <span class="weight"> SIRET </span> : 497 578 898 00049<br>
-           <span class="weight"> Président de la SAS </span> : Attila SIMKO<br>
-            Sité Hébergé chez Ionos<br>
+          <h3 class="red">Numéros</h3>
+          <p class="white">04.91.44.90.11</p>
+          <p class="white">04.91.44.89.58</p>
+          <h3 class="red">Infos légales</h3>
+          <p class="white">
+            SAS Protection +<br>
+            SIRET : 501946412 00035<br>
+            Président de la SAS : Volodymyr TCHEREDNITCHENKO<br>
+            Sité Hébergé chez Nuxit France<br>
             Tout droit de reproduction soumis à autorisation expresse.<br>
           </p>
-          <p class="white narrow">
+          <p class="white">
             Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des services
-            et activités de la société de sécurité l'Azuréenne.
+            et activités de la société de sécurité Protection +.
           </p>
-          <p class="white narrow">
+          <p class="white">
             Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès, de rectification, d’effacement,
             de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit, merci d’effectuer votre demande
-            auprès de la société de sécurité l'Azuréenne (par mail ou par courrier).
+            auprès de la société de sécurité Protection + (par mail ou par courrier).
           </p>
         </div>
       </div>
@@ -75,10 +62,11 @@
   </div>
 </div>
   <div id="quote">
+    <h2>Demandez un devis gratiut sans engagement</h2>
     <div id="quote-elements">
       <div id="quote-text">
-        <h3 class="red type">
-          l'Azuréenne, la sécurité par excellence pour les prestations de sécurité et gardiennage, notamment:
+        <h3>
+          Protection +, la sécurité par excellence pour les prestations de sécurité et gardiennage, notamment:
         </h3>
         <p>
           Contrôles de sécurité<br>
@@ -93,37 +81,29 @@
         </p>
         <p>
           Les données communiquées via ce formulaire ne seront pas transmises à des tiers. Elles sont collectées à des fins de gestion des
-          services et activités de la société de sécurité l'Azuréenne.
+          services et activités de la société de sécurité Protection +.
         </p>
         <p>
           Les données fournies seront conservées pour une durée maximale de 3 ans. Vous disposez d’un droit d’accès,
           de rectification, d’effacement, de limitation, de portabilité et d’opposition aux données personnelles vous concernant. Pour exercer ce droit,
-          merci d’effectuer votre demande auprès de la société de sécurité l'Azuréenne (par mail ou par courrier).
+          merci d’effectuer votre demande auprès de la société de sécurité Protection + (par mail ou par courrier).
         </p>
       </div>
       <div id="quote-form">
-        <h2 class="title-two">Demandez un devis gratuit sans engagement</h2>
-        <p class="red"> Les champs marqués d’un * sont obligatoires </p>
         <%= simple_form_for(@quote) do |f| %>
-          <%= f.input :society_name, required: true, label: "Nom de la société" %>
+          <%= f.input :society_name, required: true %>
           <%= f.input :name, required: true, label: 'Nom et prénom' %>
-          <%= f.input :email, required: true, label: "Email"%>
-          <label for="quote_prestation_type"> Votre prestation est </label>
-          <%= f.input :prestation_type, collection: @prestations, prompt: "Merci de sélectionner ici…", label: false %>
-          <label for="quote_prestation_type"> Décrivez ici votre besoin </label>
-          <%= f.input :work_description, type: :text, label: false %>
+          <%= f.input :email, required: true %>
+          <%= f.select :prestation_type, collection: @prestations %>
+          <%= f.input :work_description, type: :text %>
           <div id="rgpd-checkbox">
             <p>
-                En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être
-                contacté dans le cadre des services et activités de la société de sécurité l'Azuréenne.
-              </p>
-              <div class="oui">
-                <%= f.input :rgpd, as: :boolean, required: true, label: false %>
-                 <label for="contact_form_rgpd">
-                <p class="pad"> RGPD<span class="stars">*</span> </p>
-              </div>
+              En soumettant ce formulaire, j’accepte que les informations saisies dans ce formulaire soient traitées pour permettre d'être
+              contacté dans le cadre des services et activités de la société de sécurité Protection +.
+            </p>
+            <%= f.check_box :rgpd %>
           </div>
-          <%= f.submit value="Envoyer", :class => "button"  %>
+          <%= f.submit value="Envoyer" %>
         <% end %>
       </div>
     </div>

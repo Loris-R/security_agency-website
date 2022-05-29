@@ -42,6 +42,5 @@ yarn-debug.log*
 .DS_Store
 
 # Ignore development & production files with login infos for mailer
-# /config/environments/development.rb
-# /config/environments/production.rb
-/config/credentials/production.key
+/config/environments/development.rb
+/config/environments/production.rb
