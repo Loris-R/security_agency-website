@@ -4,7 +4,7 @@ class ContactFormsController < ApplicationController
     if @contact_form.save!
       ContactFormMailer.with(contact_form: @contact_form).new_contact.deliver_now
       redirect_to root_path
-      flash[:notice] = 'Votre message à bien été envoyé, nous revenons vers vous rapidement !'
+      flash[:notice] = 'Votre message à bien été envoyé, merci !'
     else
       redirect_to root_path
       flash.now[:alert] = 'Il y a eu un petit problème, appelez nous par téléphone le temps qu\'on règle ça !'

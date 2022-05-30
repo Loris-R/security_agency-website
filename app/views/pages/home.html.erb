@@ -4,15 +4,27 @@
 
     <div class="cards">
       <div class="savoir-faire-card">
-        <%= image_tag('stormtrooper.jpg', alt: 'Azureenne securité - le rempart', class: 'savoir-faire-card-img') %>
-        <p class="savoir-faire-card-title">La société de sécurité protection + est le rempart actif de votre sécurité</p>
+        <div class="hover-one">
+          <div class="hover-lay"></div>
+          <%= image_tag('stormtrooper.jpg', alt: 'Azureenne securité - le rempart', class: 'savoir-faire-card-img') %>
+          <div class="content-details">
+            <p class="sfc"> l'Azuréenne<p>
+          </div>
+        </div>
+        <p class="savoir-faire-card-title">La société de sécurité l'Azuréenne est le rempart actif de votre sécurité</p>
         <p class="savoir-faire-card-description">
-          La compétence de nos agents, augmentée de la maîtrise de nos techniques font de la société de sécurité PROTECTION +
+          La compétence de nos agents, augmentée de la maîtrise de nos techniques font de la société de sécurité l'Azuréenne
           votre partenaire indispensable et incontournable.
         </p>
       </div>
       <div class="savoir-faire-card">
-        <%= image_tag('jumelles.jpg', alt: 'azureenne securité - les agents', class: 'savoir-faire-card-img') %>
+        <div class="hover-one">
+          <div class="hover-lay"></div>
+          <%= image_tag('jumelles.jpg', alt: 'azureenne securité - les agents', class: 'savoir-faire-card-img') %>
+          <div class="content-details">
+            <p class="sfc"> Nos agents de sécurité <p>
+          </div>
+        </div>
         <p class="savoir-faire-card-title">Des agents de sécurité dynamiques au service de la protection des biens et des personnes</p>
         <p class="savoir-faire-card-description">
           Des agents de sécurité en excellente condition physique, ayant une grande capacité d’adaptation et une véritable
@@ -20,7 +32,13 @@
         </p>
       </div>
       <div class="savoir-faire-card">
-        <%= image_tag('application.jpg', alt: "azureenne securité - l'application", class: 'savoir-faire-card-img') %>
+        <div class="hover-one">
+          <div class="hover-lay"></div>
+          <%= image_tag('application.jpg', alt: "azureenne securité - l'application", class: 'savoir-faire-card-img') %>
+          <div class="content-details">
+            <p class="sfc"> Notre application <p>
+          </div>
+        </div>
         <p class="savoir-faire-card-title">Une application simple et performante</p>
         <p class="savoir-faire-card-description marg-tel">
           Enregistrer la prise de service de l’agent, sa géolocalisation jusqu’à l’enregistrement d’une main courante électronique :
@@ -61,7 +79,9 @@
     <div class="secteurs">
         <% @activities.each_with_index do |activity, index| %>
           <div class="grid-<%= index %> grid">
-            <h3 class="vertical"><%= activity.title %></h3>
+            <h3 class="vertical">
+              <%= activity.title == "Bâtiment" ? activity.subtitle : activity.title %>
+            </h3>
             <% if !activity.images.find_by(page: "home").nil? %>
               <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
             <% else %>
@@ -73,13 +93,15 @@
   </div>
 
   <div id="frame-four" class="for-computer">
-    <h2 class="parts tel">Nos partenaires</h2>
+    <h2 class="parts phon">Nos partenaires</h2>
     <div>
       <ul class="partners-logos">
         <li><%= image_tag('partenaires/gtm.png', width:"85", height: "83") %></li>
         <li><%= image_tag('partenaires/mcdonalds.png', width:"80", height: "80") %></li>
+        <% if false %>
         <li><%= image_tag('partenaires/sncf.png', width:"108", height: "57") %></li>
         <li><%= image_tag('partenaires/rtm.png', width:"114", height: "29") %></li>
+        <% end %>
         <li class="moove"><%= image_tag('partenaires/veolia.png', width:"168", height: "168") %></li>
         <li class="moove"><%= image_tag('partenaires/eurovia.png', width:"144.44", height: "81.25") %></li>
         <li class="moove"><%= image_tag('partenaires/eiffage.png', width:"193", height: "56") %></li>
@@ -92,8 +114,10 @@
       <ul class="partners-logos">
         <li><%= image_tag('partenaires/gtm.png', width:"42.5", height: "41.5") %></li>
         <li><%= image_tag('partenaires/mcdonalds.png', width:"40", height: "40") %></li>
+        <% if false %>
         <li><%= image_tag('partenaires/sncf.png', width:"54", height: "28.5") %></li>
         <li><%= image_tag('partenaires/rtm.png', width:"52.5", height: "14.5") %></li>
+        <% end %>
         <li><%= image_tag('partenaires/veolia.png', width:"84", height: "84") %></li>
         <li><%= image_tag('partenaires/eurovia.png', width:"72.22", height: "40.37") %></li>
         <li><%= image_tag('partenaires/eiffage.png', width:"96.5", height: "27") %></li>
