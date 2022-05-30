@@ -42,7 +42,7 @@ gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
 gem 'net-smtp' # to send email
 
-gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
+# gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   gem 'pry-byebug'
