@@ -3,7 +3,8 @@ lock "~> 3.17.0"
 
 set :application, "azureenne"
 set :repo_url, "git@github.com:Loris-R/security_agency-website.git"
-set :passenger_restart_with_touch, true
+
+set :rbenv_prefix, '/usr/bin/rbenv exec' # Cf issue: https://github.com/capistrano/rbenv/issues/96
 
 # Optionally, you can symlink your database.yml and/or secrets.yml file from the shared directory during deploy
 # This is useful if you don't want to use ENV variables
