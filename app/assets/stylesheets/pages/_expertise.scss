@@ -1,5 +1,14 @@
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 33vw);
-  justify-content: center;
+#expertise {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expertise-line {
+  display: flex;
+}
+
+.expertise-line-text {
+  width: 248px;
 }
