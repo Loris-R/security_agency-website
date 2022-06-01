@@ -154,6 +154,16 @@ abbr, .stars {
   margin-top: 11rem;
 }
 
+#contact-submit-problem {
+  color: #0037ff;
+  font-size: 1.2rem;
+}
+
+#quote-submit-problem {
+  color: #0037ff;
+  font-size: 1.2rem;
+}
+
 @media only screen and (min-width:767px) and (max-width: 1024px) {
   #contact-form { margin-right: 5rem; margin-left: 2rem;} #quote-elements, #contact-elements { padding: 0; justify-content: center;} #quote-form { margin-left: 1.8rem; margin-right: 1rem;} #quote-text { margin-left: 1rem;}
   .pink {clip-path: polygon(0 0, 100% 0, 100% 57%, 0 80%);}
