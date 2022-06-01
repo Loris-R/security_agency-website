@@ -72,23 +72,30 @@
       </div>
     </div>
   </div>
-
+  <h2 class="tel start">Nos secteurs d'activités</h2>
   <div id="frame-three">
-    <h2 class="tel">Nos secteurs d'activités</h2>
-
-    <div class="secteurs">
-        <% @activities.each_with_index do |activity, index| %>
-          <div class="grid-<%= index %> grid">
-            <h3 class="vertical">
-              <%= activity.title == "Bâtiment" ? activity.subtitle : activity.title %>
-            </h3>
-            <% if !activity.images.find_by(page: "home").nil? %>
-              <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
-            <% else %>
-              <%= image_tag('https://via.placeholder.com/325x688') %>
-            <% end %>
+    <div class="secteurs flip-card">
+      <% @activities.each_with_index do |activity, index| %>
+        <div class="grid-<%= index %>   grid">
+          <h3 class="vertical">
+            <%= activity.title == "Bâtiment" ? activity.subtitle : activity.title %>
+          </h3>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <% if !activity.images.find_by(page: "home").nil? %>
+                <%= image_tag(activity.title.gsub(/\s+/, "").downcase + "1.jpg") %>
+              <% else %>
+                <%= image_tag('https://via.placeholder.com/325x688') %>
+              <% end %>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-text">
+                <%= activity.description %>
+              </div>
+            </div>
           </div>
-        <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 

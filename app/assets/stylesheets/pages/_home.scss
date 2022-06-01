@@ -28,6 +28,14 @@
   color: #595959;
 }
 
+.start {
+  color: #595959;
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+
+}
+
 #frame-four {
   width: 100%;
   background-color: #C6C6C6;
@@ -140,11 +148,73 @@
 
 .secteurs {
   display: grid;
-  grid-template-columns: repeat(3, 325px);
+  grid-template-columns: repeat(3, 393px);
   justify-content: center;
-  gap: 50px;
-  margin-right: 106.6px;
+  gap: 39px;
   margin-bottom: 133px;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  width: 672px;
+  height: 1380px;
+}
+
+.flip-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(195, 195, 195, 0.1);
+}
+
+.grid-0:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-1:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-3:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-4:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.grid-5:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color:#721515;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-text {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin: 0 20px 0 20px;
 }
 
 .number {
@@ -176,7 +246,7 @@
   text-orientation:  sideways-left;
   color: #721515;
   transform: rotate(180deg);
-  margin-right: 2px;
+  margin-right: 6px;
 }
 
 .grid {
