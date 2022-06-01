@@ -5,7 +5,7 @@
         <div id="contact-form">
         <h2 class="white top">Contactez-nous sans engagement</h2>
          <p class="red"> Les champs marqués d’un * sont obligatoires </p>
-          <%= simple_form_for(@contact_form) do |f| %>
+          <%= simple_form_for @contact_form, remote: true do |f| %>
           <label for="contact_form_first_name", class="input"> Prenom:<span class="stars">*</span> </label>
             <%= f.input :first_name, required: true, label: false %>
             <label for="contact_for_last_name", class="input"> Nom:<span class="stars">*</span> </label>
@@ -34,6 +34,7 @@
               </div>
             </div>
             <%= f.submit value="Envoyer", :class => "button" %>
+            <div id="contact-submit-problem"></div>
           <% end %>
         </div>
         <div id="contact-text">
@@ -104,7 +105,7 @@
       <div id="quote-form">
         <h2 class="title-two">Demandez un devis gratuit sans engagement</h2>
         <p class="red"> Les champs marqués d’un * sont obligatoires </p>
-        <%= simple_form_for(@quote) do |f| %>
+        <%= simple_form_for @quote, remote:true do |f| %>
           <%= f.input :society_name, required: true, label: "Nom de la société" %>
           <%= f.input :name, required: true, label: 'Nom et prénom' %>
           <%= f.input :email, required: true, label: "Email"%>
@@ -124,6 +125,7 @@
               </div>
           </div>
           <%= f.submit value="Envoyer", :class => "button"  %>
+          <div id="quote-submit-problem"></div>
         <% end %>
       </div>
     </div>
