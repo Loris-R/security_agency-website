@@ -7,8 +7,21 @@
 
 .expertise-line {
   display: flex;
+  align-items: center;
 }
 
 .expertise-line-text {
   width: 248px;
+}
+
+#diagnostic {
+  height: 243px;
+}
+
+#habilete {
+  height: 243px;
+}
+
+#suivi-terrain {
+  height: 243px;
 }
