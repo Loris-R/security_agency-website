@@ -11,7 +11,10 @@
 }
 
 .expertise-line-text {
-  width: 248px;
+  width: 261px;
+  font-size: 15px;
+  height: 325px;
+  margin: 143px 80px 143px 40px;
 }
 
 #diagnostic {
@@ -24,4 +27,44 @@
 
 #suivi-terrain {
   height: 243px;
+}
+
+#diagnostic, #habilete, #suivi-terrain {
+  height: 243.64px;
+  width: 329.93px;
+}
+
+.col-li {
+  color: #991818;
+  font-size: x-large;
+}
+
+.pic-diagnostic {
+  height: 330px;
+  width: 327px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.pic-habilete {
+  height: 388px;
+  width: 329px;
+  margin: 68px 80px 71px 40px;
+}
+
+.text-habilete {
+  margin: 68px 80px 143px 40px;
+}
+
+.pic-suivi-terrain {
+  width: 329px;
+  height: 526px;
+}
+
+.text-suivi-terrain {
+  margin: 148px 80px 143px 40px;
+  height: 526px;
 }
