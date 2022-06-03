@@ -1,15 +1,11 @@
-// Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-@import url("https://use.typekit.net/qxu7vaj.css");
-
-@supports (font-variation-settings: normal){
-  @font-face {
-   font-family: "acp";
-   src: font-url('acp.ttf') format('ttf');
-   font-style: italic;
-   font-style: normal;
- }
-};
+// @supports (font-variation-settings: normal){
+//   @font-face {
+//    font-family: "acp";
+//    src: font-url('acp.ttf') format('ttf');
+//    font-style: italic;
+//    font-style: normal;
+//  }
+// };
 
 @font-face {
   font-family: "Eina01-Regular"; 
@@ -24,7 +20,7 @@
 // Define fonts for body and headers
 $body-font: "Eina01-Regular", "sans-serif";
 $headers-font: "Eina01-Regular", "sans-serif";
-$my-font: "acp";
+$my-font: "adobe-caslon-pro";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
