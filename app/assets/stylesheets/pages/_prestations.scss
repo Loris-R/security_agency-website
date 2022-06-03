@@ -27,6 +27,12 @@
   }
 }
 
+ @-moz-document url-prefix() {
+   .prestation img {
+     width: 136%;
+   }
+ }
+
 
 .align-right {
   flex-direction: row-reverse;
