@@ -148,7 +148,9 @@
 
 .secteurs {
   display: grid;
-  grid-template-columns: repeat(3, 393px);
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 691px 691px;
+  grid-auto-flow: column;
   justify-content: center;
   gap: 39px;
   margin-bottom: 133px;
