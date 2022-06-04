@@ -31,7 +31,7 @@ img = Image.new(file_name: "bâtiment3.jpg",
 )
 img.save!
 
-puts "creating parking activity..."
+puts "creating Résidence activity..."
 activity = Activity.new(title: "Résidence",
             subtitle: "",
             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
@@ -40,7 +40,7 @@ activity = Activity.new(title: "Résidence",
 )
 activity.save!
 
-puts "parking's images..."
+puts "residence's images..."
 img = Image.new(file_name: "résidence1.jpg",
   page: "home",
   activity_id: activity.id
