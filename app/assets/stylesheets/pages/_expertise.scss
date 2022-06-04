@@ -17,18 +17,6 @@
   margin: 143px 80px 143px 40px;
 }
 
-#diagnostic {
-  height: 243px;
-}
-
-#habilete {
-  height: 243px;
-}
-
-#suivi-terrain {
-  height: 243px;
-}
-
 #diagnostic, #habilete, #suivi-terrain {
   height: 243.64px;
   width: 329.93px;
@@ -68,3 +56,9 @@
   margin: 148px 80px 143px 40px;
   height: 526px;
 }
+
+@media only screen and (min-width:767px) and (max-width: 1024px) {
+  .pic-diagnostic { height: 175px; width: 163px;} #diagnostic, #habilete, #suivi-terrain { height: 121.82px; width: 164.96px;} .expertise-line-text {
+  height: 305.5px; font-size: 14px;} .pic-habilete { height: 214px; width:180.5px; margin: -45px 80px 71px 40px;} .text-habilete { margin: 61px 5px 143px 40px;} #habilete { margin-bottom: 110px;} .pic-suivi-terrain { width: 329px; height: 526px; } .pic-suivi-terrain {
+  width: 185.5px; height: 322px; margin-bottom: 13px;} .text-suivi-terrain { margin: 32px 80px 143px 40px} .tab { margin-bottom: 6rem;}
+  }
