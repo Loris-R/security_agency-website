@@ -90,7 +90,8 @@
             </div>
             <div class="flip-card-back">
               <div class="flip-text">
-                <%= simple_format(activity.description) %>
+              <h3><%= activity.title == "Bâtiment" ? simple_format(activity.subtitle) : simple_format(activity.title) %></h3>
+              <p><%= simple_format(activity.description) %></p>
               </div>
             </div>
           </div>
