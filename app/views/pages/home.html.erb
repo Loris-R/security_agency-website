@@ -1,6 +1,6 @@
 <div class="home-contain">
   <div id="frame-one">
-    <h2 class="tel">Notre savoir faire</h2>
+    <h2 class="tel-home">Notre savoir faire</h2>
 
     <div class="cards">
       <div class="savoir-faire-card">
@@ -26,7 +26,7 @@
           </div>
         </div>
         <p class="savoir-faire-card-title">Des agents de sécurité dynamiques au service de la protection des biens et des personnes</p>
-        <p class="savoir-faire-card-description">
+        <p class="savoir-faire-card-description new">
           Des agents de sécurité en excellente condition physique, ayant une grande capacité d’adaptation et une véritable
           vocation de la protection des biens et des personnes.
         </p>
@@ -40,7 +40,7 @@
           </div>
         </div>
         <p class="savoir-faire-card-title">Une application simple et performante</p>
-        <p class="savoir-faire-card-description marg-tel">
+        <p class="savoir-faire-card-description marg-tel plus">
           Enregistrer la prise de service de l’agent, sa géolocalisation jusqu’à l’enregistrement d’une main courante électronique :
           notre application sur-mesure simplifie notre service de sécurité.
         </p>
@@ -49,7 +49,7 @@
   </div>
 
   <div id="frame-two">
-    <h2 class="tel">Une triple stratégie</h2>
+    <h2 class="tel-home">Une triple stratégie</h2>
 
     <div class="strategie">
       <div class="strategie-card">
@@ -72,7 +72,7 @@
       </div>
     </div>
   </div>
-  <h2 class="tel start">Nos secteurs d'activités</h2>
+  <h2 class="tel-home start">Nos secteurs d'activités</h2>
   <div id="frame-three">
     <div class="secteurs flip-card">
       <% @activities.each_with_index do |activity, index| %>
@@ -90,7 +90,7 @@
             </div>
             <div class="flip-card-back">
               <div class="flip-text">
-              <h3><%= activity.title == "Bâtiment" ? simple_format(activity.subtitle) : simple_format(activity.title) %></h3>
+              <h3 class="card-tit"><%= activity.title == "Bâtiment" ? simple_format(activity.subtitle) : simple_format(activity.title) %></h3>
               <p><%= simple_format(activity.description) %></p>
               </div>
             </div>
@@ -117,7 +117,7 @@
     </div>
   </div>
   <div id="frame-four" class="for-tel">
-    <h2 class="parts tel">Nos partenaires</h2>
+    <h2 class="parts tel-home">Nos partenaires</h2>
     <div>
       <ul class="partners-logos">
         <li><%= image_tag('partenaires/gtm.png', width:"42.5", height: "41.5") %></li>
