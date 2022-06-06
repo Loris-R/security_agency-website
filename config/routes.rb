@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'secteurs-dactivité', to: 'pages#secteurs', as: 'secteurs'
   get 'prestations', to: 'pages#prestations'
   get 'contact', to: 'pages#contact'
+  get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
+  get "/robots.:format", to: "pages#robots"
 end
