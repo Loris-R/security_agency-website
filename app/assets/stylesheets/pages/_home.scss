@@ -458,6 +458,8 @@
   }
   #footer {
     flex-direction: column;
+    text-align: center;
+    padding: 32px;
   }
   #footer img {
     margin-bottom: 23px;
@@ -499,8 +501,5 @@
   }
   #frame-four h2 {
     font-size: 1.8rem;
-  }
-  #all-the-infos {
-    text-align: center;
   }
 }
