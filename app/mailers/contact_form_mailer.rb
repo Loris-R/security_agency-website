@@ -8,6 +8,6 @@ class ContactFormMailer < ApplicationMailer
   def new_contact
     @contact_form = params[:contact_form]
     @user_full_name = "#{@contact_form.first_name} #{@contact_form.last_name}"
-    mail(to: "contact@lap-securite.com", subject: 'Nouveau message sur l\'Azuréenne Sécurité')
+    mail(to: "contact@lap-securite.com", subject: 'Nouveau message sur l\'Azuréenne de sécurité')
   end
 end

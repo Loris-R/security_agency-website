@@ -7,6 +7,6 @@ class QuoteMailer < ApplicationMailer
   #
   def new_quote
     @quote = params[:quote]
-    mail(to: "contact@lap-securite.com", subject: 'Demande de devis sur l\'Azuréenne Sécurité')
+    mail(to: "contact@lap-securite.com", subject: 'Demande de devis sur l\'Azuréenne de protection')
   end
 end

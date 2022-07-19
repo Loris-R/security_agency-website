@@ -85,33 +85,6 @@ img = Image.new(file_name: "hôtel3.jpg",
 )
 img.save!
 
-# puts "creating evenement activity..."
-# activity = Activity.new(title: "Evènement",
-#             subtitle: "Evènnementiel",
-#             description: "L’agent de sécurité appliquera les consignes que vous nous aurez communiquées.\n
-#                           Le plus souvent : contrôle de billet, palpation, surveillance des dangers potentiels (colis suspect par exemple)…"
-# )
-# activity.save!
-
-# puts "evenement's images..."
-# img = Image.new(file_name: "evènement1.jpg",
-#   page: "home",
-#   activity_id: activity.id
-# )
-# img.save!
-
-# img = Image.new(file_name: "evènement2.jpg",
-#   page: "expertise",
-#   activity_id: activity.id
-# )
-# img.save!
-
-# img = Image.new(file_name: "evènement3.jpg",
-#   page: "expertise",
-#   activity_id: activity.id
-# )
-# img.save!
-
 puts "creating BTP activity..."
 activity = Activity.new(title: "BTP",
             subtitle: "Surveillance des chantiers",
