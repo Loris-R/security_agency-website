@@ -7,7 +7,7 @@ activity = Activity.new(title: "Bâtiment",
             subtitle: "Bailleurs sociaux, syndics",
             description: "Notre professionnalisme et le sérieux de nos agents nous ont spécialisé dans l’application de la tranquillité résidentielle 
                           au sein des copropriétés, des bailleurs sociaux…\n
-                          Ce secteur d’activité couvre tout le territoire national : contrôle d’accès selon les spécificités de votre copropriété, gestion des places de parking, des poubelles, des déchets, surveillance piscine, sécurisation des lieux pour éviter leur dégradation, etc."
+                          Ce secteur d’activité couvre tout le territoire national : contrôle d’accès selon les spécificités de votre copropriété."
 )
 activity.save!
 
